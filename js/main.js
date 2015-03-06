@@ -472,6 +472,44 @@ var model = [
 				]
 			}
 		]
+	},
+	{
+		"title": "Fader Fort",
+		"id": "faderFort",
+		"location": "",
+		"lat": ,
+		"lon": ,
+		"link": "",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+
+				]
+			}
+		]
 	}
 ];
 
@@ -479,10 +517,6 @@ var model = [
 $('.nav a').on('click', function(){
     $(".navbar-toggle").click() 
 });
-
-function scroller(id) {
-
-}
 
 //custom knockout binding to initialize map
 ko.bindingHandlers.map = {
