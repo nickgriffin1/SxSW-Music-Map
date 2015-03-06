@@ -57,8 +57,8 @@
     			<br>
 
     			<div data-bind="foreach: model">
-    				<div class="list row">
-	    				<div class="col-md-12 text-left">
+    				<div class=" venue list row">
+	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
 	    					<h5 class="header" data-bind="text: title"></h5>
 	    					<p data-bind="text: location"></p>
 	    					<a data-bind="text: link"></a>

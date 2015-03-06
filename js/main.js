@@ -1,6 +1,7 @@
 var model = [
 	{
 		"title": "Barcelona",
+		"id": "barcelona",
 		"location": "209 E 6th St",
 		"lat": 30.267403,
 		"lon": -97.741162,
@@ -47,6 +48,7 @@ var model = [
 	},
 	{
 		"title": "Spotify House",
+		"id": "spotifyHouse",
 		"location": "901 E 6th St",
 		"lat": 30.265091,
 		"lon": -97.733316,
@@ -57,6 +59,7 @@ var model = [
 	},
 	{
 		"title": "Stubb's",
+		"id": "stubbs",
 		"location": "801 Red River St",
 		"lat": 30.268494,
 		"lon": -97.736140,
@@ -91,6 +94,7 @@ var model = [
 	},
 	{
 		"title": "Empire Control Room",
+		"id": "empireControlRoom",
 		"location": "606 E 7th St",
 		"lat": 30.267424,
 		"lon": -97.736057,
@@ -144,8 +148,9 @@ var model = [
 		]
 	},
 	{
-		"title": "House of Vans at Mohawk",
-		"location": "912 Red River St",
+		"title": "House of Vans",
+		"id": "houseofVans",
+		"location": "Mowhawk, 912 Red River St",
 		"lat": 30.270153,
 		"lon": -97.736086,
 		"link": "vans.com/sxsw15.html",
@@ -276,6 +281,157 @@ var model = [
 				]
 			}
 		]
+	},
+	{
+		"title": "Pandora Discovery Den",
+		"id": "pandoraDiscoveryDen",
+		"location": "The Gatsby, 708 E 6th St",
+		"lat": 30.266362,
+		"lon": -97.735488,
+		"link": "blog.pandora.com/2015/03/03/announcing-the-4th-annual-sxsw-pandora-discovery-den-lineup",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Elliphant - 2:00PM",
+					"Peking Duck - 3:00PM",
+					"Halsey - 4:00PM",
+					"ODESZA - 5:00PM",
+					"~ Doors Close - 6:00PM ~",
+					"Lolawolf - 8:00PM",
+					"Robert Delong - 9:00PM",
+					"Griz - 10:00PM",
+					"Gorgon City - 11:00PM",
+					"Cazzette - 12:00AM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"Antonique Smith - 2:00PM",
+					"Sam Dew - 3:00PM",
+					"Raury - 4:00PM",
+					"SZA - 5:00PM",
+					"~ Doors Close - 6:00PM ~",
+					"BJ the Chicago Kid - 8:00PM",
+					"Rich Homie Quan - 9:00PM",
+					"Earl Sweatshirt - 10:00PM",
+					"Migos - 11:00PM",
+					"Wyclef Jean - 12:00AM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Andrew Combs - 2:00PM",
+					"Israel Nash - 3:00PM",
+					"The Deslondes - 4:00PM",
+					"White Horse - 5:00PM",
+					"~ Doors Close - 6:00PM ~",
+					"Della Mae - 8:00PM",
+					"Madisen Ward and the Mama Bear - 9:00PM",
+					"Jamestown Revival - 10:00PM",
+					"Houndmouth - 11:00PM",
+					"Green River Ordinance - 12:00AM",
+					"Whitney Morgan and the 78's - 1:00AM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Ex Cops - 2:00PM",
+					"Zella Day - 3:00PM",
+					"Joywave - 4:00PM",
+					"Palma Violets - 5:00PM",
+					"~ Doors Close - 6:00PM ~",
+					"Kaleo - 8:00PM",
+					"Priory - 9:00PM",
+					"Bid Data - 10:00PM",
+					"San Fermin - 11:00PM",
+					"The Black Angels - 12:00PM"
+				]
+			}
+		]
+	},
+	{
+		"title": "ACL Live",
+		"id": "aclLive",
+		"location": "Moody Theater, 310 Willie Nelson Boulevard",
+		"lat": 30.265438,
+		"lon": -97.747149,
+		"link": "acl-live.com",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+
+				]
+			}
+		]
+	},
+	{
+		"title": "Hype Hotel",
+		"id": "hypeHotel",
+		"location": "Fair Market, 1100 East 5th Street",
+		"lat": 30.264017,
+		"lon": -97.731517,
+		"link": "hypem.com/hotel/2015",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+
+				]
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+
+				]
+			}
+		]
 	}
 ];
 
@@ -283,6 +439,10 @@ var model = [
 $('.nav a').on('click', function(){
     $(".navbar-toggle").click() 
 });
+
+function scroller(id) {
+
+}
 
 //custom knockout binding to initialize map
 ko.bindingHandlers.map = {
@@ -313,7 +473,7 @@ ko.bindingHandlers.map = {
 
 			//onclick the infowindow will display relevant information to the venue
   			var infowindow = new google.maps.InfoWindow({
-  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + model[x].link + "</a>"
+  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + model[x].link + "</a><br><a type=\"button\" class=\"btn btn-default\" href=\"#" + model[x].id + "\">Lineup</a>"
 			});
   		}
 
