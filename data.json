@@ -1,0 +1,67 @@
+{
+	"spotifyHouse": {
+		"title": "Spotify House",
+		"location": "901 E 6th St",
+		"lat": 30.265091,
+		"lon": -97.733316,
+		"lineup": {
+			"Wednesday": {
+
+			},
+			"Thursday": {
+
+			},
+			"Friday": {
+
+			},
+			"Saturday": {
+
+			}
+		}
+	},
+	"faderFort": {
+
+	},
+	"soundcloudHouse": {
+
+	},
+	"pandoraHouse": {
+
+	},
+	"hypeHotel": {
+
+	},
+	"barcelona": {
+		"title": "Barcelona",
+		"location": "209 E 6th St",
+		"lat": 30.267403,
+		"lon": -97.741162,
+		"lineup": {
+			"Wednesday": [
+				"DJ TRE - 8:00PM-8:45PM",
+				"Ikonika - 9:45PM-11:15PM",
+				"Kode9 - 11:15PM-12:30AM",
+				"Taso - 12:30AM-1:00AM",
+				"DJ Spinn - 1:00AM-1:45AM"
+			],
+			"Thursday": [
+				"Landau - 8:00PM-9:00PM",
+				"Dylan Stark - 9:00PM-10:00PM",
+				"Braille - 10:00PM-11:00PM",
+				"DJ Earl - 1:00PM-12:00AM",
+				"L-Vis 1990 - 12:00AM-1:00AM",
+				"Avalon Emerson - 1:00AM-1:50AM"
+			],
+			"Friday": [
+				"DJ Dana Lu - 8:00PM-8:30PM",
+				"DJ Tiga - 8:30PM-9:00PM",
+				"Gonzalo Silva - 10:00PM-10:30PM",
+				"Ezrakh - 10:30PM-11:00PM",
+				"Vaneck (Fiinesse)-11:00PM-11:25PM",
+				"Dougie F - 11:25PM-11:30PM",
+				"Nadus - 1:00AM-1:30AM",
+				"Sliink - 1:30AM-2:00AM"
+			]
+		}
+	}
+}

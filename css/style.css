@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica;
+	font-weight: lighter;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar {
+	background-color: black;
+}
+
+.header {
+	font-size: 20px;
+}
+
+.list {
+	padding-left: 30px;
+}
+
+.venue {
+	border-style: solid;
+	border-width: 3px;
+	border-bottom: 0px;
+}
+
+#mapDiv {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
