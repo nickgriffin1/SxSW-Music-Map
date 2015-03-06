@@ -64,11 +64,14 @@
 	    					<a data-bind="text: link"></a>
 	    					<br>
 	    					<div data-bind="foreach: lineup">
-	    						<p data-bind="text: title"></p>
-	    						<p data-bind="text: date"></p>
-	    						<ul data-bind="foreach: setTimes">
-	    							<p data-bind="text: $data"></p>
-	    						</ul>
+                                <div class="lineup">
+	    					        <p data-bind="text: title"></p>
+	    						    <p data-bind="text: date"></p>
+	    						    <ul data-bind="foreach: setTimes">
+	    							    <p data-bind="text: $data"></p>
+	    						    </ul>
+                                </div>
+                                
 	    						<br>
 	    					</div>
 	    					<br>
