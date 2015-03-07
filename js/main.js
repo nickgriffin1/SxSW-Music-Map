@@ -520,7 +520,7 @@ $('.nav a').on('click', function(){
 
 //custom knockout binding to initialize map
 ko.bindingHandlers.map = {
-    init: function (element, valueAccessor, allBindingsAccessor, viewModel) {
+    init: function(element, valueAccessor, allBindingsAccessor, viewModel) {
         var mapObj = ko.utils.unwrapObservable(valueAccessor());
 
         var latLng = new google.maps.LatLng(
@@ -530,14 +530,14 @@ ko.bindingHandlers.map = {
 
         var mapOptions = { 
         	center: { lat: 30.267392, lng: -97.740155 },
-            zoom: 15, 
+            zoom: 15
         };
 
         //creates map using mapOptions to specify initial zoom and placement
         mapObj.googleMap = new google.maps.Map(element, mapOptions);
 
         //used in for loop to add event listener to the markers, implemented outside of for loop as a closure
-        function eventListenerMaker(marker, x) {
+        function eventListenerMaker (marker, x) {
         	//zooms and centers map onclick of marker
 			google.maps.event.addListener(marker, 'click', function() {
 				mapObj.googleMap.setZoom(17);
@@ -547,7 +547,8 @@ ko.bindingHandlers.map = {
 
 			//onclick the infowindow will display relevant information to the venue
   			var infowindow = new google.maps.InfoWindow({
-  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + model[x].link + "</a><br><a type=\"button\" class=\"btn btn-default\" href=\"#" + model[x].id + "\">Lineup</a>"
+  				//includes title and buttons that link to the website and the lineup in the list
+  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-default\" href=\"http://" + model[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-default\" href=\"#" + model[x].id + "\">Lineup</a>"
 			});
   		}
 
@@ -566,11 +567,25 @@ ko.bindingHandlers.map = {
     }
 };
 
-var viewModel = function() {
-	var self = this;
-
+var viewModel = {
 	//creates map on page
-	this.myMap = ko.observable({});
+	myMap: ko.observable({}),
+
+	query: ko.observable('')
 };
 
-ko.applyBindings(new viewModel());
+viewModel.model = ko.dependentObservable(function() {
+    var search = this.query().toLowerCase();
+
+    return ko.utils.arrayFilter(model, function(model) {
+    	if (model.title.toLowerCase().indexOf(search) >= 0) {
+        	return model.title.toLowerCase().indexOf(search) >= 0;
+        };
+
+        if (model.location.toLowerCase().indexOf(search) >= 0) {
+        	return model.location.toLowerCase().indexOf(search) >= 0;
+        };
+    });
+}, viewModel);
+
+ko.applyBindings(viewModel);

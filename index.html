@@ -39,30 +39,27 @@
 
     	<hr>
 
-    	<div class="container" id="search">
-    		<div class="row text-center">
-    			<h1>Search</h1>
-    			<form>
-    				<input>
-    			</form>
-    		</div>
-    	</div>
+        <div id="search" class="row text-center">
+            <h2>Search</h2>
+            <form>
+                <input type="search" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+            </form>
+        </div>
 
-    	<hr>
+        <hr>
 
     	<div class="container" id="list-view">
     		<div class="row text-center">
     			<h1>List View</h1>
 
-    			<br>
+                <br>
 
     			<div class="span12" data-bind="foreach: model">
     				<div class=" venue list row">
 	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
-	    					<h5 class="header" data-bind="text: title"></h5>
+	    					<strong class="header" data-bind="text: title"></strong>
 	    					<p data-bind="text: location"></p>
 	    					<a data-bind="text: link"></a>
-	    					<br>
 	    					<div data-bind="foreach: lineup">
                                 <div class="lineup">
 	    					        <p data-bind="text: title"></p>
@@ -71,7 +68,7 @@
 	    							    <p data-bind="text: $data"></p>
 	    						    </ul>
                                 </div>
-                                
+
 	    						<br>
 	    					</div>
 	    					<br>
