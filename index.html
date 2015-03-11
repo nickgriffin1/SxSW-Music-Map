@@ -42,11 +42,9 @@
         <div id="search" class="row text-center">
             <h2>Search</h2>
             <form>
-                <input type="search" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+                <input type="search" placeholder="Results display in list view" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" id="searchBar">
             </form>
         </div>
-
-        <hr>
 
     	<div class="container" id="list-view">
     		<div class="row text-center">
@@ -59,7 +57,7 @@
 	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
 	    					<strong class="header" data-bind="text: title"></strong>
 	    					<p data-bind="text: location"></p>
-	    					<a data-bind="text: link"></a>
+	    					<a type="button" class="btn btn-default" data-bind="attr: {href: 'http://' + link}">Link</a>
 	    					<div data-bind="foreach: lineup">
                                 <div class="lineup">
 	    					        <p data-bind="text: title"></p>
@@ -70,8 +68,10 @@
                                 </div>
 
 	    						<br>
+
 	    					</div>
-	    					<br>
+
+                            <a href="#" class="back-to-top">Back to Map</a>
 	    				</div>
 	    			</div>
     			</div>
@@ -85,14 +85,12 @@
     			<h1>About</h1>
 				<h4>Frameworks and APIs</h4>
 				<p>• Google Maps Javascript API</p>
-				<p>• Yelp API</p>
 				<p>• Twitter Bootstrap</p>
 				<p>• Knockout.js</p>
 				<p>• jQuery</p>
 
     			<hr> 
 
-    			<h4>Designed by Nick Griffin</h4>
     			<h5>For questions, concerns or corrections contact:</h5>
     			<h5>nickgriffinwebdev@gmail.com</h5>
 

@@ -1,12 +1,100 @@
 var model = [
 	{
+		"title": "Auditorium Shores",
+		"id": "auditoriumShores",
+		"location": "800 W Riverside Dr",
+		"lat": 30.262192,
+		"lon": -97.751633,
+		"link": "sxsw.com/music/festival/auditorium-shores",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"My Jerusalem - 5:00PM",
+					"Mac McCaughan - 6:00PM",
+					"Charles Bradley & His Extraordinaires - 7:00PM",
+					"Spoon - 8:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Carson McHone - 5:00PM",
+					"Jackie Green - 6:00PM",
+					"Luther Dickinson - 7:00PM",
+					"Ryan Bingham - 8:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Hunter Sharpe - 2:40PM",
+					"The Eastern Sea - 3:40PM",
+					"BoDeans - 4:40PM",
+					"Mexican Institute of Sound + Toy Selectah - 6:00PM",
+					"Bomba Estereo - 7:00PM",
+					"Intocable - 8:00PM"
+				]
+			}
+		]
+	},
+	{
+		"title": "Austin Music Hall",
+		"id": "austinMusicHall",
+		"location": "208 Nueces St",
+		"lat": 30.266696,
+		"lon": -97.750179,
+		"link": "do512.com/venues/austin-music-hall",
+		"lineup": [
+			{
+				"title": "Presented by ICM Partners",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"Peter Rosenberg (Host) - 7:55PM",
+					"Young Money Yawn - 8:15PM",
+					"Dreezy - 8:30PM",
+					"EarthGang - 8:45PM",
+					"Fashawn - 9:00PM",
+					"Dinero Farrar - 9:15PM",
+					"Overdoz - 9:45PM",
+					"Lil Herb - 10:00PM",
+					"Two-9 - 10:15PM",
+					"Remy Banks - 10:30PM",
+					"Little Simz - 10:45PM",
+					"Snootie Wild - 11:00PM",
+					"Domo Genesis - 11:15PM",
+					"Hodgy Beats - 11:30PM",
+					"Freddie Gibbs - 11:45PM",
+					"Shy Glizzy - 12:40AM",
+					"Casey Veggies - 12:55AM",
+					"K Camp - 1:10AM",
+					"Ace Hood - 1:25AM",
+					"Rae Sremmurd - 1:40AM"
+				]
+			}
+		]
+	},
+	{
 		"title": "Barcelona",
 		"id": "barcelona",
 		"location": "209 E 6th St",
 		"lat": 30.267403,
 		"lon": -97.741162,
-		"link": "",
+		"link": "do512.com/venues/barcelona",
 		"lineup": [
+			{
+				"title": "",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Torus - 8:00PM",
+					"Akka - 9:30PM",
+					"Rabbit - 10:45PM",
+					"Eprom - 11:45PM"
+				]
+			},
 			{
 				"title": "",
 				"date": "Wednesday, March 18",
@@ -14,7 +102,7 @@ var model = [
 					"DJ TRE - 8:00PM",
 					"Ikonika - 9:45PM",
 					"Kode9 - 11:15PM",
-					"Taso - 12:30AM",
+					"Jameszoo - 12:45AM",
 					"DJ Spinn - 1:00AM"
 				]
 			},
@@ -25,9 +113,10 @@ var model = [
 					"Landau - 8:00PM",
 					"Dylan Stark - 9:00PM",
 					"Braille - 10:00PM",
-					"DJ Earl - 1:00PM",
-					"L-Vis 1990 - 12:00AM",
-					"Avalon Emerson - 1:00AM"
+					"DJ Earl - 11:00PM",
+					"Taso - 12:30AM",
+					"DJ Spinn - 1:00AM",
+					"Era Footwork Crew - 1:45AM"
 				]
 			},
 			{
@@ -36,11 +125,14 @@ var model = [
 				"setTimes": [
 					"DJ Dana Lu - 8:00PM",
 					"DJ Tiga - 8:30PM",
+					"Gutta - 9:00PM",
+					"Big O - 9:30PM",
 					"Gonzalo Silva - 10:00PM",
 					"Ezrakh - 10:30PM",
 					"Vaneck (Fiinesse) - 11:00PM",
 					"Dougie F - 11:25PM",
-					"Nadus - 1:00AM",
+					"L Vis 1990 - 12:00AM",
+					"Avalon Emerson - 1:00AM",
 					"Sliink - 1:30AM"
 				]
 			}
@@ -54,7 +146,83 @@ var model = [
 		"lon": -97.733316,
 		"link": "spotifyhouse.com",
 		"lineup": [
-
+			{
+				"title": "",
+				"date": "Sunday, March 15",
+				"setTimes": [
+					"James Davis - 1:45PM",
+					"Marian Hill - 2:45PM",
+					"Centavrvs - 4:00PM",
+					"Conrad - 4:45PM",
+					"Amason - 6:15PM",
+					"Stromae - 8:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Monday, March 16",
+				"setTimes": [
+					"SoulCycle x Ryan Hemsworth - 9:30AM",
+					"MLKMN and El Dusty - 12:00PM",
+					"Speedy Ortiz - 1:00PM",
+					"Buraka Som Sistema - 2:15PM",
+					"The Vaccines - 3:15PM",
+					"Ryan Hemsworth - 4:00PM",
+					"Run The Jewels - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"SoulCycle x Gorgon City - 9:30AM",
+					"VERITE - 12:00PM",
+					"BORNS - 1:00PM",
+					"Ryn Weaver - 2:30PM",
+					"Gorgon City - 3:30PM",
+					"ODESZA - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"SoulCycle x Jonathan Toubin - 9:30AM",
+					"Cam - 12:00PM",
+					"Sam Hunt - 1:00PM",
+					"Leon Bridges - 2:30PM",
+					"Houndmouth - 3:30PM",
+					"Ryan Bingham - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"SoulCycle x Hudson Mowhawke - 9:30AM",
+					"Twin Shadow (Acoustic) - 12:00PM",
+					"James Bay - 1:00PM",
+					"Tobias Jesso Jr. - 2:30PM",
+					"Ibeyi - 3:00PM",
+					"Big Data - 4:30PM",
+					"Cazzette - 5:15PM",
+					"MisterWives - 6:00PM",
+					"Hudson Mowhawke - 6:45PM",
+					"Special Guest - 7:45PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"SoulCycle x Just Blaze - 9:30AM",
+					"SZA - 1:00PM",
+					"Pell - 2:00PM",
+					"Wale - 2:45PM",
+					"PRhyme - 3:30PM",
+					"Joey Bada$$ - 5:00PM"
+				]
+			}
 		]
 	},
 	{
@@ -100,6 +268,20 @@ var model = [
 		"lon": -97.736057,
 		"link": "empireatx.com",
 		"lineup": [
+			{
+				"title": "Presented by HE^RD x PAYPAL Music Tech Mashup",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Hard Proof - 7:00PM",
+					"Applied Pressure - 8:15PM",
+					"Roger Sellers - 9:45PM",
+					"Goldfish - 10:30PM",
+					"Kastle - 11:15PM",
+					"UZ - 11:50PM",
+					"Daedelus - 12:30AM",
+					"TOKiMONSTA - 1:20AM"
+				]
+			},
 			{
 				"title": "Presented by Cómeme",
 				"date": "Wednesday, March 18",
@@ -148,13 +330,102 @@ var model = [
 		]
 	},
 	{
+		"title": "Empire Garage",
+		"id": "empireGarage",
+		"location": "604 E 7th St",
+		"lat": 30.267621,
+		"lon": -97.736167,
+		"link": "empireatx.com",
+		"lineup": [
+			{
+				"title": "Presented by HE^RD x PAYPAL Music Tech Mashup",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Ruby Jane - 7:00PM",
+					"SPEAK - 7:45PM",
+					"Marmalakes - 8:30PM",
+					"Shakey Graves - 9:15PM",
+					"The London Souls - 10:00PM",
+					"Gary Clark Jr. - 12:30AM"
+				]
+			},
+			{
+				"title": "Presented by Ray-Ban x Boiler Room 006",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Shash'U - 9:30PM",
+					"Stwo - 10:15PM",
+					"Madlib - 11:00PM",
+					"BADBADNOTGOOD - 11:45PM",
+					"Rae Sremmurd - 12:15AM",
+					"Kaytranada - 12:30AM"
+				]
+			},
+			{
+				"title": "Presented by PC Music",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"easyFun - 8:30PM",
+					"Kane West - 9:00PM",
+					"Spinee - 9:30PM",
+					"Felicita - 10:00PM",
+					"Lil Data - 10:30PM",
+					"Danny L Harle - 11:00PM",
+					"GFOTY - 11:30PM",
+					"A.G. Cook - 12:00AM",
+					"Hannah Diamond - 12:30AM",
+					"QT - 1:00AM",
+					"Sophie - 1:15AM"
+				]
+			},
+			{
+				"title": "Presented by Stones Throw",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Stones Throw 56 DJs - 8:00PM",
+					"Mild High Club - 9:00PM",
+					"Silk Rhodes - 9:30PM",
+					"Nx Worries - 10:00PM",
+					"Homeboy Sandman - 10:30PM",
+					"Tuxedo - 11:10PM",
+					"Funkmosphere Party w/ DJs Dam-Funk, Peanut Butter Wolf and J Rocc - 12:00AM"
+				]
+			},
+			{
+				"title": "Presented by Neon Gold",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Tigertown - 8:00PM",
+					"Seinabo Sey - 9:00PM",
+					"Christine and the Queens - 10:00PM",
+					"Marina and the Diamonds - 11:00PM",
+					"MR MS - 12:00AM",
+					"The Knocks - 1:00AM"
+				]
+			}
+		]
+	},
+	{
 		"title": "House of Vans",
 		"id": "houseofVans",
-		"location": "Mowhawk, 912 Red River St",
+		"location": "Mohawk, 912 Red River St",
 		"lat": 30.270153,
 		"lon": -97.736086,
 		"link": "vans.com/sxsw15.html",
 		"lineup": [
+			{
+				"title": "",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"~ Outdoor Stage ~",
+					"Angel Olsen",
+					"+ more TBA",
+					"~ Indoor Stage ~",
+					"Hudson Mowhawke",
+					"+ more TBA"
+					
+				]
+			},
 			{
 				"title": "Pitchfork (day) and Vans (night)",
 				"date": "Wednesday, March 18",
@@ -366,31 +637,41 @@ var model = [
 		"link": "acl-live.com",
 		"lineup": [
 			{
-				"title": "",
+				"title": "Presented by Beer n Tacos x Street Execs",
 				"date": "Wednesday, March 18",
 				"setTimes": [
-					
+					"Fort Knox - 7:30PM",
+					"Kayoo - 7:35PM",
+					"Tru-TV - 8:10PM",
+					"Money Makin Nique - 8:30PM",
+					"Runway Richy - 8:55PM",
+					"Bankroll Fresh - 9:20PM",
+					"Cap 1 - 9:40PM",
+					"K Camp - 10:00PM",
+					"Travis Porter - 10:30PM",
+					"Young Dolph - 11:00PM",
+					"Trae the Truth - 11:30PM",
+					"2 Chainz - 12:00AM",
+					"Dipset - 12:50PM"		
 				]
 			},
 			{
-				"title": "",
+				"title": "Presented by 101X",
 				"date": "Thursday, March 19",
 				"setTimes": [
-
+					"Lieutenant - 7:00PM",
+					"Family of the Year - 8:00PM",
+					"Catfish and the Bottlemen - 9:00PM",
+					"Big Data - 10:00PM",
+					"AWOLNATION - 11:00PM"
 				]
 			},
 			{
 				"title": "",
 				"date": "Friday, March 20",
 				"setTimes": [
-
-				]
-			},
-			{
-				"title": "",
-				"date": "Saturday, March 21",
-				"setTimes": [
-
+					"Taylor Gang - 12:00AM",
+					"Wiz Khalifa - 12:15AM"
 				]
 			}
 		]
@@ -404,31 +685,61 @@ var model = [
 		"link": "hypem.com/hotel/2015",
 		"lineup": [
 			{
-				"title": "",
+				"title": "Presented by The Syndicate",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Parlour Tricks - 8:00PM",
+					"Amason - 9:00PM",
+					"San Fermin - 10:00PM",
+					"Milo Green - 11:00PM",
+					"ODESZA - 12:00AM",
+					"Spoon - 1:00AM"
+				]
+			},
+			{
+				"title": "Presented by All Things Go + Blah Blah Blah Science",
 				"date": "Wednesday, March 18",
 				"setTimes": [
-
+					"COIN - 8:00PM",
+					"Laura Welsh - 9:00PM",
+					"Ryn Weaver - 10:00PM",
+					"Best Coast - 11:00PM",
+					"Wolf Alice - 1:00AM"
 				]
 			},
 			{
-				"title": "",
+				"title": "Presented by Gorilla vs Bear",
 				"date": "Thursday, March 19",
 				"setTimes": [
-
+					"Kero Kero Bonito - 8:00PM",
+					"Chastity Belt - 9:00PM",
+					"Hinds - 10:00PM",
+					"Yumi Zouma - 11:00PM",
+					"Leon Bridges - 12:00AM",
+					"Autre Ne Veut - 1:00AM"
 				]
 			},
 			{
-				"title": "",
+				"title": "Presented by Cruel Rhythm",
 				"date": "Friday, March 20",
 				"setTimes": [
-
+					"Kari Faux - 8:00PM",
+					"Daniel Wilson - 9:00PM",
+					"Seinabo Sey - 11:00PM",
+					"Year & Years - 12:00AM",
+					"Rae Sremmurd - 1:00AM"
 				]
 			},
 			{
-				"title": "",
+				"title": "Presented by Pigeons & Planes",
 				"date": "Saturday, March 21",
 				"setTimes": [
-
+					"Tove Styrke - 8:00PM",
+					"Mick Jenkins - 9:00PM",
+					"Goldlink - 10:00PM",
+					"Tei Shi - 11:00PM",
+					"Ryan Hemsworth - 12:00AM",
+					"Earl Sweatshirt - 1:00AM"
 				]
 			}
 		]
@@ -442,14 +753,14 @@ var model = [
 		"link": "tumblrirl.do512.com/tumblrirl2015",
 		"lineup": [
 			{
-				"title": "",
+				"title": "Artist: Milan Zrnic",
 				"date": "Wednesday, March 18",
 				"setTimes": [
 					"Twin Shadow - 7:00PM"
 				]
 			},
 			{
-				"title": "",
+				"title": "Artists: Traceloops, Wolf Mask, Ana Tortos",
 				"date": "Thursday, March 19",
 				"setTimes": [
 					"Courtney Barnett - 1:00PM",
@@ -457,7 +768,7 @@ var model = [
 				]
 			},
 			{
-				"title": "",
+				"title": "Artist: Eric Chase Anderson",
 				"date": "Friday, March 20",
 				"setTimes": [
 					"Tobias Jesso Jr. - 1:00PM",
@@ -465,10 +776,71 @@ var model = [
 				]
 			},
 			{
-				"title": "",
+				"title": "Artist: Gunnar Deatherage",
 				"date": "Saturday, March 21",
 				"setTimes": [
 					"Houndmouth - 1:00PM"
+				]
+			}
+		]
+	},
+	{
+		"title": "Clive Bar",
+		"id": "cliveBar",
+		"location": "609 Davis St",
+		"lat": 30.260029,
+		"lon": -97.738583,
+		"link": "schedule.sxsw.com/events?lsort=venue_all_days&venue=Clive+Bar",
+		"lineup": [
+			{
+				"title": "Presented by StubHub",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"The Mowgli's - 9:00PM",
+					"Charles Bradley & His Extraordinaires - 10:00PM",
+					"Future Islands - 11:00PM",
+					"Portugal. The Man - 12:00AM"
+				]
+			},
+			{
+				"title": "Presented by StubHub",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Elliphant - 9:00PM",
+					"The Cribs - 10:00PM",
+					"MS MR - 11:00PM",
+					"The Vaccines - 12:00AM"
+				]
+			},
+			{
+				"title": "Presented by StubHub",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"San Fermin - 9:00PM",
+					"BORNS - 10:00PM",
+					"Mew - 11:00PM"
+				]
+			},
+			{
+				"title": "Presented by Tilly's",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Kehlani - 9:00PM",
+					"Domo Genesis - 10:00PM",
+					"Hodgy Beats - 11:00PM",
+					"IAMSU! - 12:00AM"
+				]
+			},
+			{
+				"title": "Presented by SXAméricas: Zona Indie",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Clubz - 8:00PM",
+					"Hey Chica! - 9:00PM",
+					"60 Tigres - 10:00PM",
+					"Agoraphobia - 11:00PM",
+					"Prefiero Fernandez - 12:00AM",
+					"El Conjunto Nueva Ola - 1:00AM"
 				]
 			}
 		]
@@ -513,7 +885,7 @@ var model = [
 	// }
 ];
 
-//collapses navbar onclick
+//jQuery statement collapses navbar onclick
 $('.nav a').on('click', function(){
     $(".navbar-toggle").click() 
 });
@@ -530,14 +902,14 @@ ko.bindingHandlers.map = {
 
         var mapOptions = { 
         	center: { lat: 30.267392, lng: -97.740155 },
-            zoom: 15
+            zoom: 14
         };
 
         //creates map using mapOptions to specify initial zoom and placement
         mapObj.googleMap = new google.maps.Map(element, mapOptions);
 
         //used in for loop to add event listener to the markers, implemented outside of for loop as a closure
-        function eventListenerMaker (marker, x) {
+    	function eventListenerMaker (marker, x) {
         	//zooms and centers map onclick of marker
 			google.maps.event.addListener(marker, 'click', function() {
 				mapObj.googleMap.setZoom(17);
@@ -562,6 +934,7 @@ ko.bindingHandlers.map = {
 				title: model[x].title
 			});
 
+			//uses above function to create the event listeners and passes in x to correctly display html content
 			eventListenerMaker(marker, x);
   		};
     }
@@ -577,12 +950,11 @@ var viewModel = {
 viewModel.model = ko.dependentObservable(function() {
     var search = this.query().toLowerCase();
 
+    //ugly search engine for data, looks through model for keywords
     return ko.utils.arrayFilter(model, function(model) {
     	if (model.title.toLowerCase().indexOf(search) >= 0) {
         	return model.title.toLowerCase().indexOf(search) >= 0;
-        };
-
-        if (model.location.toLowerCase().indexOf(search) >= 0) {
+        } else if (model.location.toLowerCase().indexOf(search) >= 0) {
         	return model.location.toLowerCase().indexOf(search) >= 0;
         };
     });
