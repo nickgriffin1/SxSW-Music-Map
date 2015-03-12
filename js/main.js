@@ -1238,8 +1238,7 @@ ko.bindingHandlers.map = {
       				scale: 10
     			}
   			});
-
-      		map.setCenter(pos);
+  			
     	}, function() {
       		handleNoGeolocation(true);
     	});
