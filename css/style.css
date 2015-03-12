@@ -47,15 +47,23 @@ a {
 	margin: 5px;
 }
 
+.input-group {
+	width: 90%;
+}
+
+.event-title {
+	font-size: 18px;
+}
+
+.event-date {
+	font-size: 15px;
+}
+
 #mapDiv {
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-#searchBar {
-	width: 50%;
 }
 
 #navbar ul {

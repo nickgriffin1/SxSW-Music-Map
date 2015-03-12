@@ -26,8 +26,7 @@
                     <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
                         <ul class="nav navbar-nav"> 
                             <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Map</a></li>
-                            <li><a href="#search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>
-                            <li><a href="#list-view"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> List View</a></li>
+                            <li><a href="#list-view"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> List View</a></li>
                             <li><a href="#about"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> About</a></li>
                         </ul>
                     </div>
@@ -39,16 +38,18 @@
 
     	<hr>
 
-        <div id="search" class="row text-center">
-            <h2>Search</h2>
-            <form>
-                <input type="search" placeholder="Results display in list view" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" id="searchBar">
-            </form>
-        </div>
-
     	<div class="container" id="list-view">
     		<div class="row text-center">
     			<h1>List View</h1>
+
+                <br>
+
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Search venues</span>
+                        <input type="search" class="form-control" aria-describedby="basic-addon1" placeholder="Results display in list view" data-bind="value: queryVenues, valueUpdate: 'keyup'" autocomplete="off">
+                    </div>
+                </div>
 
                 <br>
 
@@ -60,8 +61,8 @@
 	    					<a type="button" class="btn btn-default" data-bind="attr: {href: 'http://' + link}">Link</a>
 	    					<div data-bind="foreach: lineup">
                                 <div class="lineup">
-	    					        <p data-bind="text: title"></p>
-	    						    <p data-bind="text: date"></p>
+	    					        <p class="event-title" data-bind="text: title"></p>
+	    						    <p class="event-date" data-bind="text: date"></p>
 	    						    <ul data-bind="foreach: setTimes">
 	    							    <p data-bind="text: $data"></p>
 	    						    </ul>
@@ -96,7 +97,7 @@
 
     			<hr>
 
-    			<p> Disclaimer: This webpage is unofficial and has no affiliation with South by Southwest or any sponser. This website was built for educational purposes. </p>
+    			<p> Disclaimer: This webpage is unofficial and has no affiliation with South by Southwest or any sponser. This website was built for educational purposes and does not intend to include all events. </p>
 
     			<br>
 	    	</div>
