@@ -1231,7 +1231,7 @@ ko.bindingHandlers.map = {
       		var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
       		var marker = new google.maps.Marker({
-      			map: map,
+      			map: mapObj.googleMap,
     			position: pos,
     			icon: {
       				path: google.maps.SymbolPath.CIRCLE,
