@@ -1233,10 +1233,7 @@ ko.bindingHandlers.map = {
       		var marker = new google.maps.Marker({
       			map: mapObj.googleMap,
     			position: pos,
-    			icon: {
-      				path: google.maps.SymbolPath.CIRCLE,
-      				scale: 3
-    			}
+    			icon: 'img/icon.png'
   			});
 
     	}, function() {
