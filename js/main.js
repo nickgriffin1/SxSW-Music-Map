@@ -1225,6 +1225,12 @@ ko.bindingHandlers.map = {
 			eventListenerMaker(marker, x);
   		};
 
+  		//used in geolocation below
+  		var image = {
+  			url: 'img/icon.png',
+  			size: new google.maps.Size(5, 5)
+  		}
+
   		//from google's API page, sets users location to make navigation easier
   		if(navigator.geolocation) {
     		navigator.geolocation.getCurrentPosition(function(position) {
@@ -1233,7 +1239,7 @@ ko.bindingHandlers.map = {
       		var marker = new google.maps.Marker({
       			map: mapObj.googleMap,
     			position: pos,
-    			icon: 'img/icon.png'
+    			icon: image
   			});
 
     	}, function() {
