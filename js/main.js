@@ -1235,10 +1235,10 @@ ko.bindingHandlers.map = {
     			position: pos,
     			icon: {
       				path: google.maps.SymbolPath.CIRCLE,
-      				scale: 10
+      				scale: 3
     			}
   			});
-  			
+
     	}, function() {
       		handleNoGeolocation(true);
     	});
