@@ -258,6 +258,23 @@ var model = [
 					"Milky Chance - 12:15AM"
 				]
 			},
+			{
+				"title": "Powered by SoundExchange",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Jess Glynne - 7:50PM",
+					"Johnny Stimson - 8:10PM",
+					"The Districts - 8:30PM",
+					"Laura Welsh - 9:10PM",
+					"The Ting Tings - 9:30PM",
+					"Meg Mac - 10:10PM",
+					"Clean Bandit - 10:30PM",
+					"Elle King - 11:10PM",
+					"Bleachers - 11:30PM",
+					"Laleh - 12:10AM",
+					"Marina and the Diamonds - 12:30AM"
+				]
+			},
 		]
 	},
 	{
@@ -1132,44 +1149,95 @@ var model = [
 			}
 		]
 	},
-	// {
-	// 	"title": "Fader Fort",
-	// 	"id": "faderFort",
-	// 	"location": "",
-	// 	"lat": ,
-	// 	"lon": ,
-	// 	"link": "",
-	// 	"lineup": [
-	// 		{
-	// 			"title": "",
-	// 			"date": "Wednesday, March 18",
-	// 			"setTimes": [
-
-	// 			]
-	// 		},
-	// 		{
-	// 			"title": "",
-	// 			"date": "Thursday, March 19",
-	// 			"setTimes": [
-
-	// 			]
-	// 		},
-	// 		{
-	// 			"title": "",
-	// 			"date": "Friday, March 20",
-	// 			"setTimes": [
-
-	// 			]
-	// 		},
-	// 		{
-	// 			"title": "",
-	// 			"date": "Saturday, March 21",
-	// 			"setTimes": [
-
-	// 			]
-	// 		}
-	// 	]
-	// }
+	{
+		"title": "Fader Fort",
+		"id": "faderFort",
+		"location": "1101 E 5th St",
+		"lat": 30.263498,
+		"lon": -97.731366,
+		"link": "thefader.com/event/fader-fort-austin-2015",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"3D Na'Tee - 1:00PM",
+					"Girl Band - 1:30PM",
+					"Elliot Moss - 2:15PM",
+					"Kap G - 3:00PM",
+					"Bully - 3:45PM",
+					"Stromae - 4:30PM",
+					"The Cribs - 5:15PM",
+					"Sam Hunt - 6:00PM",
+					"Dej Loaf - 6:45PM",
+					"Chance the Rapper & The Social Experiment - 7:30PM",
+					"~ DJ Sets ~",
+					"Wildarms - 1:00PM",
+					"Uniqu3 - 3:00PM",
+					"OG Ron C - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"QT - 1:30PM",
+					"Shamir - 2:15PM",
+					"Wolf Alice - 3:00PM",
+					"Seinabo Sey - 3:45PM",
+					"Shlohmo - 4:30PM",
+					"Skepta - 5:15PM",
+					"BADBADNOTGOOD & Ghostface Killah - 6:00PM",
+					"Bleachers - 6:45PM",
+					"Mike Will Made-it & friends - 7:30PM",
+					"~ DJ Sets ~",
+					"Joe Kay - 1:00PM",
+					"The Whooligan - 3:00PM",
+					"Spazzkid - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Romans - 1:30PM",
+					"The Districts - 2:15PM",
+					"Tei Shi - 3:00PM",
+					"Years & Years - 3:45PM",
+					"Kehlani - 4:30PM",
+					"Viet Cong - 5:15PM",
+					"Migos - 6:00PM",
+					"Special Guest - 6:15PM",
+					"Special Guest - 7:30PM",
+					"~ DJ Sets ~",
+					"Teklife: DJ Spinn and Taso - 1:00PM",
+					"Peter Rosenberg - 3:00PM",
+					"Gorgon City - 5:00PM"
+				]	
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Hinds - 1:30PM",
+					"Kali Uchis - 2:15PM",
+					"Girlpool - 3:00PM",
+					"Vince Staples - 3:45PM",
+					"Sick Feeling - 4:30PM",
+					"Alex G - 5:15PM",
+					"Kevin Gates - 6:00PM",
+					"Special Guest - 6:45PM",
+					"Tink - 7:30PM",
+					"Hudson Mowhawke - 8:15PM",
+					"Special Guest - 9:00PM",
+					"~ DJ Sets ~",
+					"Austin Millz - 1:00PM",
+					"Ballers Eve - 3:00PM",
+					"Brenmar - 5:00PM"
+				]
+			}
+		]
+	}
 ];
 
 //jQuery statement collapses navbar onclick
@@ -1196,7 +1264,7 @@ ko.bindingHandlers.map = {
         mapObj.googleMap = new google.maps.Map(element, mapOptions);
 
         //used in for loop to add event listener to the markers, implemented outside of for loop as a closure
-    	function eventListenerMaker (marker, x) {
+    	function eventListenerMaker(marker, x) {
         	//zooms and centers map onclick of marker
 			google.maps.event.addListener(marker, 'click', function() {
 				mapObj.googleMap.setZoom(17);
@@ -1226,7 +1294,7 @@ ko.bindingHandlers.map = {
   		};
 
   		//from google's API page, sets users location to make navigation easier
-  		if(navigator.geolocation) {
+  		if (navigator.geolocation) {
     		navigator.geolocation.getCurrentPosition(function(position) {
       		var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
@@ -1238,8 +1306,9 @@ ko.bindingHandlers.map = {
       				scale: 3
     			}
   			});
+    	}, 
 
-    	}, function() {
+    	function anonGeo() {
       		handleNoGeolocation(true);
     	});
   		} else {
@@ -1262,7 +1331,11 @@ var viewModel = {
 	//creates map on page
 	myMap: ko.observable({}),
 
-	queryVenues: ko.observable('')
+	queryVenues: ko.observable(''),
+
+	bounceMarker: function () {
+		console.log("hello world");
+	}
 };
 
 viewModel.model = ko.dependentObservable(function() {
