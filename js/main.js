@@ -717,17 +717,29 @@ var model = [
 				"title": "All Things Go + Blah Blah Blah Science",
 				"date": "Wednesday, March 18",
 				"setTimes": [
+					"Cathedrals - 12:00PM",
+					"Only Real - 1:00PM",
+					"Circa Waves - 2:00PM",
+					"Shura - 3:00PM",
+					"Hundred Waters - 4:00PM",
+					"Alvvays - 5:00PM",
 					"COIN - 8:00PM",
 					"Laura Welsh - 9:00PM",
 					"Ryn Weaver - 10:00PM",
 					"Best Coast - 11:00PM",
-					"Wolf Alice - 1:00AM"
+					"Wolf Alice - 12:00AM"
 				]
 			},
 			{
 				"title": "Gorilla vs Bear",
 				"date": "Thursday, March 19",
 				"setTimes": [
+					"Natalie Prass - 12:00PM",
+					"The Disctricts - 1:00PM",
+					"King Tuff - 2:00PM",
+					"Twerps - 3:00PM",
+					"Viet Cong - 4:00PM",
+					"Twin Shadow - 5:00PM",
 					"Kero Kero Bonito - 8:00PM",
 					"Chastity Belt - 9:00PM",
 					"Hinds - 10:00PM",
@@ -740,6 +752,12 @@ var model = [
 				"title": "Cruel Rhythm",
 				"date": "Friday, March 20",
 				"setTimes": [
+					"Lydia Ainsworth - 12:00PM",
+					"Christine and the Kings - 1:00PM",
+					"George Maple - 2:00PM",
+					"Gorgon City - 3:00PM",
+					"Raury - 4:00PM",
+					"ILoveMakonnen - 5:00PM",
 					"Kari Faux - 8:00PM",
 					"Daniel Wilson - 9:00PM",
 					"Seinabo Sey - 11:00PM",
@@ -751,6 +769,12 @@ var model = [
 				"title": "Pigeons & Planes",
 				"date": "Saturday, March 21",
 				"setTimes": [
+					"Ghibli - 12:00PM",
+					"Lord RAJA - 1:00PM",
+					"Redhinho - 2:00PM",
+					"A.G. Cook - 3:00PM",
+					"Sophie - 4:00PM",
+					"Hudson Mowhawke - 5:00PM",
 					"Tove Styrke - 8:00PM",
 					"Mick Jenkins - 9:00PM",
 					"Goldlink - 10:00PM",
