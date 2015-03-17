@@ -274,7 +274,7 @@ var model = [
 					"Earl Sweatshirt - 2:00PM",
 					"Cortney Barnett - 3:30PM"
 				]
-			}
+			},
 			{
 				"title": "Powered by SoundExchange",
 				"date": "Friday (night), March 20",
