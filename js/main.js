@@ -1293,7 +1293,18 @@ ko.bindingHandlers.map = {
 			google.maps.event.addListener(marker, 'click', function() {
 				mapObj.googleMap.setZoom(17);
 				mapObj.googleMap.setCenter(marker.getPosition());
+					
 				infowindow.open(mapObj.googleMap, marker);
+
+				if (marker.getAnimation() != null) {
+    				marker.setAnimation(null);
+  				} else {
+  					marker.setAnimation(google.maps.Animation.BOUNCE);
+
+    				setTimeout(function() {
+    					marker.setAnimation(null);
+    				}, 10000);
+  				}
 			});
 
 			//onclick the infowindow will display relevant information to the venue
@@ -1315,7 +1326,7 @@ ko.bindingHandlers.map = {
 
 			//uses above function to create the event listeners and passes in x to correctly display html content
 			eventListenerMaker(marker, x);
-  		};
+  		}
 
   		//from google's API page, sets users location to make navigation easier
   		if (navigator.geolocation) {
@@ -1329,9 +1340,10 @@ ko.bindingHandlers.map = {
       				path: google.maps.SymbolPath.CIRCLE,
       				scale: 3
     			}
-  			});
-    	}, 
+  			})
+    	},
 
+    	//determines geolocation browser support, also from Google
     	function anonGeo() {
       		handleNoGeolocation(true);
     	});
@@ -1355,11 +1367,7 @@ var viewModel = {
 	//creates map on page
 	myMap: ko.observable({}),
 
-	queryVenues: ko.observable(''),
-
-	bounceMarker: function () {
-		console.log("hello world");
-	}
+	queryVenues: ko.observable('')
 };
 
 viewModel.model = ko.dependentObservable(function() {
