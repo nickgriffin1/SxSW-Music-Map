@@ -50,7 +50,7 @@ var model = [
 		"link": "do512.com/venues/austin-music-hall",
 		"lineup": [
 			{
-				"title": "Presented by ICM Partners",
+				"title": "ICM Partners",
 				"date": "Thursday, March 19",
 				"setTimes": [
 					"Peter Rosenberg (Host) - 7:55PM",
@@ -259,8 +259,25 @@ var model = [
 				]
 			},
 			{
+				"title": "Spin Showcase",
+				"date": "Friday (day), March 20",
+				"setTimes": [
+					"~ Main Stage ~",
+					"Viet Cong - 12:00PM",
+					"Kate Boy - 1:00PM",
+					"Will Butler of Arcade Fire - 2:30PM",
+					"Twin Shadow - 3:00PM",
+					"Run the Jewels - 4:00PM",
+					"~ North Stage ~",
+					"METZ - 12:30PM",
+					"Screaming Females - 1:30PM",
+					"Earl Sweatshirt - 2:00PM",
+					"Cortney Barnett - 3:30PM"
+				]
+			}
+			{
 				"title": "Powered by SoundExchange",
-				"date": "Friday, March 20",
+				"date": "Friday (night), March 20",
 				"setTimes": [
 					"Jess Glynne - 7:50PM",
 					"Johnny Stimson - 8:10PM",
@@ -274,7 +291,7 @@ var model = [
 					"Laleh - 12:10AM",
 					"Marina and the Diamonds - 12:30AM"
 				]
-			},
+			}
 		]
 	},
 	{
@@ -300,7 +317,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Cómeme",
+				"title": "Cómeme",
 				"date": "Wednesday, March 18",
 				"setTimes": [
 					"Cristian S. - 8:00PM",
@@ -311,7 +328,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Monstercat",
+				"title": "Monstercat",
 				"date": "Thursday, March 19",
 				"setTimes": [
 					"Aero Chord",
@@ -321,7 +338,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Leaving Records",
+				"title": "Leaving Records",
 				"date": "Friday, March 20",
 				"setTimes": [
 					"Brogan Bently - 9:00PM",
@@ -333,7 +350,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Neon Gold",
+				"title": "Neon Gold",
 				"date": "Saturday, March 21",
 				"setTimes": [
 					"VÉRITÉ - 8:30PM",
@@ -396,7 +413,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Stones Throw",
+				"title": "Stones Throw",
 				"date": "Friday, March 20",
 				"setTimes": [
 					"Stones Throw 56 DJs - 8:00PM",
@@ -409,7 +426,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Neon Gold",
+				"title": "Neon Gold",
 				"date": "Saturday, March 21",
 				"setTimes": [
 					"Tigertown - 8:00PM",
@@ -444,8 +461,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Pitchfork (day) and Vans (night)",
-				"date": "Wednesday, March 18",
+				"title": "Pitchfork",
+				"date": "Wednesday (day), March 18",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"Torres - 12:30PM",
@@ -454,12 +471,6 @@ var model = [
 					"Viet Cong - 3:15PM",
 					"Courtney Barnett - 4:15PM",
 					"Rae Sremmurd - 5:15PM",
-					"Girlpool - 8:00PM",
-					"Alvvays - 9:00PM",
-					"Metz - 10:00PM",
-					"The Damned - 11:00PM",
-					"Thee Oh Sees - 12:00AM",
-					"Future Islands - 1:00AM",
 					"~ Indoor Stage ~",
 					"Lydia Ainsworth - 1:00PM",
 					"Natalie Prass - 2:00PM",
@@ -467,6 +478,20 @@ var model = [
 					"Shamir - 3:30PM",
 					"AG Cook - 4:15PM",
 					"Sophie - 5:00PM",
+				]
+			},
+			{
+				"title": "Vans",
+				"date": "Wednesday (night), March 18",
+				"setTimes": [
+					"~ Outdoor Stage ~",
+					"Girlpool - 8:00PM",
+					"Alvvays - 9:00PM",
+					"Metz - 10:00PM",
+					"The Damned - 11:00PM",
+					"Thee Oh Sees - 12:00AM",
+					"Future Islands - 1:00AM",
+					"~ Indoor Stage ~",
 					"Sal Show - 7:45PM",
 					"Free Weed - 8:15PM",
 					"The Shivas - 9:15PM",
@@ -477,8 +502,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Pitchfork (day) and Domino Recording (night)",
-				"date": "Thursday, March 19",
+				"title": "Pitchfork",
+				"date": "Thursday (day), March 19",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"Hundred Waters - 12:30PM",
@@ -488,17 +513,25 @@ var model = [
 					"Waxahatchee - 3:45PM",
 					"Vince Staples - 4:30PM",
 					"Migos - 5:15PM",
+					"~ Indoor Stage ~",
+					"Bully - 1:00PM",
+					"Makthaverskan - 2:00PM",
+					"Untold - 3:00PM",
+					"Twerps - 4:00PM",
+					"Windows98 (Will Butler of Arcade Fire) - 4:45PM"
+				]
+			},
+			{
+				"title": "Domino Recording",
+				"date": "Thursday (night), March 19",
+				"setTimes": [
+					"~ Outdoor Stage ~",
 					"Alex G - 9:00PM",
 					"Bob Moses - 10:00PM",
 					"Mathew E. White - 11:00PM",
 					"Hamilton Leithauser - 12:00AM",
 					"Laura Marling - 1:00AM",
 					"~ Indoor Stage ~",
-					"Bully - 1:00PM",
-					"Makthaverskan - 2:00PM",
-					"Untold - 3:00PM",
-					"Twerps - 4:00PM",
-					"Windows98 (Win Butler of Arcade Fire) - 4:45PM",
 					"Meatbodies - 8:30PM",
 					"Girl Band - 9:30PM",
 					"Boxed In - 10:30PM",
@@ -507,8 +540,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Windish (day) and Rhymesayers (night)",
-				"date": "Friday, March 20",
+				"title": "Windish",
+				"date": "Friday (day), March 20",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"JUCE - 12:30PM",
@@ -517,6 +550,19 @@ var model = [
 					"BØRNS - 3:30PM",
 					"Lido - 4:20PM",
 					"ODESZA - 5:20PM",
+					"~ Indoor Stage ~",
+					"Only Real - 12:00PM",
+					"Son Lux - 1:00PM",
+					"Shura - 2:00PM",
+					"Wolf Alice - 4:00PM",
+					"Cathedrals - 4:50PM"
+				]
+			},
+			{
+				"title": "Rhymesayers",
+				"date": "Friday (night), March 20",
+				"setTimes": [
+					"~ Outdoor Stage ~",
 					"Get Cyphy - 8:00PM",
 					"deM atlaS - 9:00PM",
 					"PROF - 9:45PM",
@@ -525,11 +571,6 @@ var model = [
 					"Dilated Peoples - 11:45PM",
 					"Atmosphere - 12:45PM",
 					"~ Indoor Stage ~",
-					"Only Real - 12:00PM",
-					"Son Lux - 1:00PM",
-					"Shura - 2:00PM",
-					"Wolf Alice - 4:00PM",
-					"Cathedrals - 4:50PM",
 					"DJ Halo - 7:30PM",
 					"Modie Black - 8:15PM",
 					"Paranoid Castle - 9:15PM",
@@ -540,8 +581,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Fun Fun Fun (day) and Wedidit (night)",
-				"date": "Saturday, March 21",
+				"title": "Fun Fun Fun",
+				"date": "Saturday (day), March 21",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"The Blind Shake - 12:30PM",
@@ -549,6 +590,20 @@ var model = [
 					"Ceremony - 2:25PM",
 					"Swervedriver - 3:35PM",
 					"Ghostface Killah w/ Badbadnotgood - 4:50PM",
+					"~ Indoor Stage ~",
+					"The Outfit - 12:45PM",
+					"Lust for Youth - 1:30PM",
+					"Orthy - 2:15PM",
+					"Roger Sellers - 3:00PM",
+					"Rat Fist (Randy of No Age + Sean of Pissed Jeans) - 3:45PM",
+					"Code Orange - 4:30PM",
+					"Powertrip - 5:10PM"
+				]
+			},
+			{
+				"title": "Wedidit",
+				"date": "Saturday (night), March 21",
+				"setTimes": [
 					"Nick Melons 8:15PM",
 					"Eric Dingus - 9:00PM",
 					"D33J - 9:30PM",
@@ -558,14 +613,6 @@ var model = [
 					"Tory Lanez - 11:40PM",
 					"Shlohmo - 12:00AM",
 					"TBD Special Guest - 1:00AM",
-					"~ Indoor Stage ~",
-					"The Outfit - 12:45PM",
-					"Lust for Youth - 1:30PM",
-					"Orthy - 2:15PM",
-					"Roger Sellers - 3:00PM",
-					"Rat Fist (Randy of No Age + Sean of Pissed Jeans) - 3:45PM",
-					"Code Orange - 4:30PM",
-					"Powertrip - 5:10PM"
 				]
 			}
 		]
@@ -654,7 +701,7 @@ var model = [
 		"link": "acl-live.com",
 		"lineup": [
 			{
-				"title": "Presented by Beer n Tacos x Street Execs",
+				"title": "Beer n Tacos x Street Execs",
 				"date": "Wednesday, March 18",
 				"setTimes": [
 					"Fort Knox - 7:30PM",
@@ -673,7 +720,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by 101X",
+				"title": "101X",
 				"date": "Thursday, March 19",
 				"setTimes": [
 					"Lieutenant - 7:00PM",
@@ -1296,19 +1343,21 @@ ko.bindingHandlers.map = {
 					
 				infowindow.open(mapObj.googleMap, marker);
 
+				//bounces marker onclick
 				if (marker.getAnimation() != null) {
     				marker.setAnimation(null);
   				} else {
   					marker.setAnimation(google.maps.Animation.BOUNCE);
 
+  					//stops marker from bouncing after 3 seconds
     				setTimeout(function() {
     					marker.setAnimation(null);
-    				}, 10000);
+    				}, 3000);
   				}
 			});
 
 			//onclick the infowindow will display relevant information to the venue
-  			var infowindow = new google.maps.InfoWindow({
+  			infowindow = new google.maps.InfoWindow({
   				//includes title and buttons that link to the website and the lineup in the list
   				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-default\" href=\"http://" + model[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-default\" href=\"#" + model[x].id + "\">Lineup</a>"
 			});
