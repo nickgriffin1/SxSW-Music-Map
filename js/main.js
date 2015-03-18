@@ -1416,6 +1416,7 @@ var viewModel = {
 	//creates map on page
 	myMap: ko.observable({}),
 
+	//observable for holding input from search box
 	queryVenues: ko.observable('')
 };
 
