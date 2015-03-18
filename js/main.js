@@ -1359,7 +1359,7 @@ ko.bindingHandlers.map = {
 			//onclick the infowindow will display relevant information to the venue
   			infowindow = new google.maps.InfoWindow({
   				//includes title and buttons that link to the website and the lineup in the list
-  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-default\" href=\"http://" + model[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-default\" href=\"#" + model[x].id + "\">Lineup</a>"
+  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + model[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + model[x].id + "\">Lineup</a>"
 			});
   		}
 

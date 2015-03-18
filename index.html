@@ -36,8 +36,6 @@
 
     	<div class="container" id="mapDiv" data-bind="map: myMap"></div>
 
-    	<hr>
-
     	<div class="container" id="list-view">
     		<div class="row text-center">
     			<h1>List View</h1>
@@ -58,7 +56,7 @@
 	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
 	    					<strong class="header" data-bind="text: title"></strong>
 	    					<p data-bind="text: location"></p>
-	    					<a type="button" class="btn btn-default" data-bind="attr: {href: 'http://' + link}">Link</a>
+	    					<a type="button" class="btn btn-primary" data-bind="attr: {href: 'http://' + link}">Link</a>
 	    					<div data-bind="foreach: lineup">
                                 <div class="lineup">
 	    					        <p class="event-title" data-bind="text: title"></p>
