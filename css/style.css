@@ -17,6 +17,12 @@ a {
 	background-color: 
 }
 
+h1 {
+	font-weight: lighter;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 .navbar {
 	background:rgba(255,255,255, 0.77);
 }
