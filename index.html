@@ -51,28 +51,32 @@
 
                 <br>
 
-    			<div class="span12" data-bind="foreach: model">
-    				<div class="venue list row">
-	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
-	    					<strong class="header" data-bind="text: title"></strong>
-	    					<p data-bind="text: location"></p>
-	    					<a type="button" class="btn btn-primary" data-bind="attr: {href: 'http://' + link}">Official Website</a>
-	    					<div data-bind="foreach: lineup">
-                                <div class="lineup">
-	    					        <p class="event-title" data-bind="text: title"></p>
-	    						    <p class="event-date" data-bind="text: date"></p>
-	    						    <ul data-bind="foreach: setTimes">
-	    							    <p data-bind="text: $data"></p>
-	    						    </ul>
-                                </div>
+    			<div class="span12">
+                    <ul data-bind="template: {name: 'venue', foreach: model}"></ul>
 
-	    						<br>
+                    <script type="text/html" id="venue">
+        				<div class="venue list row">
+    	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
+    	    					<strong class="header" data-bind="text: title"></strong>
+    	    					<p data-bind="text: location"></p>
+    	    					<a type="button" class="btn btn-primary" data-bind="attr: {href: 'http://' + link}">Official Website</a>
+    	    					<div data-bind="foreach: lineup">
+                                    <div class="lineup">
+    	    					        <p class="event-title" data-bind="text: title"></p>
+    	    						    <p class="event-date" data-bind="text: date"></p>
+    	    						    <ul data-bind="foreach: setTimes">
+    	    							    <p data-bind="text: $data"></p>
+    	    						    </ul>
+                                    </div>
 
-	    					</div>
+    	    						<br>
 
-                            <a href="#" class="btn btn-primary">Back to Map</a>
-	    				</div>
-	    			</div>
+    	    					</div>
+
+                                <a href="#" class="btn btn-primary">Back to Map</a>
+    	    				</div>
+    	    			</div>
+                    </script>
     			</div>
     		</div>
     	</div>
