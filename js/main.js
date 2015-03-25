@@ -1373,7 +1373,7 @@ ko.bindingHandlers.map = {
     		navigator.geolocation.getCurrentPosition(function(position) {
       			var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-      			var infowindow = new google.maps.InfoWindow({
+      			var marker = new google.maps.Marker({
         			map: mapObj.googleMap,
         			position: pos,
         			icon: {
