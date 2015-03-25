@@ -1378,11 +1378,9 @@ ko.bindingHandlers.map = {
         			position: pos,
         			icon: {
       					path: google.maps.SymbolPath.CIRCLE,
-      					scale: 10
+      					scale: 7
     				}
       			});
-
-      			mapObj.googleMap.setCenter(pos);
     		}, function() {
       			handleNoGeolocation(true);
     		});
