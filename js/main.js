@@ -1316,11 +1316,6 @@ ko.bindingHandlers.map = {
     init: function(element, valueAccessor, allBindingsAccessor, viewModel) {
         var mapObj = ko.utils.unwrapObservable(valueAccessor());
 
-        var latLng = new google.maps.LatLng(
-            ko.utils.unwrapObservable(mapObj.lat),
-            ko.utils.unwrapObservable(mapObj.lng)
-        );
-
         var mapOptions = { 
         	center: { lat: 30.267392, lng: -97.740155 },
             zoom: 15
@@ -1331,32 +1326,12 @@ ko.bindingHandlers.map = {
 
         //used in for loop to add event listener to the markers, implemented outside of for loop as a closure
     	function eventListenerMaker(marker, x) {
-        	//zooms and centers map onclick of marker
-			google.maps.event.addListener(marker, 'click', function() {
-				mapObj.googleMap.setZoom(17);
-				mapObj.googleMap.setCenter(marker.getPosition());
-					
-				infowindow.open(mapObj.googleMap, marker);
-
-				//bounces marker onclick
-				if (marker.getAnimation() != null) {
-    				marker.setAnimation(null);
-  				} else {
-  					marker.setAnimation(google.maps.Animation.BOUNCE);
-
-  					//stops marker from bouncing after 3 seconds
-    				setTimeout(function() {
-    					marker.setAnimation(null);
-    				}, 3000);
-  				}
-			});
-
-			//onclick the infowindow will display relevant information to the venue
-  			infowindow = new google.maps.InfoWindow({
-  				//includes title and buttons that link to the website and the lineup in the list
-  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + model[x].link + "\">Official Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + model[x].id + "\">Lineup</a>"
-			});
+        	
   		}
+
+  		var infowindow = new google.maps.InfoWindow();
+
+  		var marker, i;
 
         //adds the markers to the map from the model array
         for (x = 0; x < model.length; x++) {
@@ -1368,42 +1343,59 @@ ko.bindingHandlers.map = {
 				title: model[x].title
 			});
 
-			//uses above function to create the event listeners and passes in x to correctly display html content
-			eventListenerMaker(marker, x);
+			
+			//zooms and centers map onclick of marker with closure
+			google.maps.event.addListener(marker, 'click', (function(marker, x) {
+				return function () {
+					mapObj.googleMap.setZoom(17);
+					mapObj.googleMap.setCenter(marker.getPosition());
+			
+					infowindow.open(mapObj.googleMap, marker);
+					infowindow.setContent("<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + model[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + model[x].id + "\">Lineup</a>")
+
+					//bounces marker onclick
+					if (marker.getAnimation() != null) {
+						marker.setAnimation(null);
+					} else {
+						marker.setAnimation(google.maps.Animation.BOUNCE);
+
+						//stops marker from bouncing after 3 seconds
+						setTimeout(function() {
+							marker.setAnimation(null);
+						}, 3000);
+					}
+				}
+			})(marker, x));	
   		}
 
   		//from google's API page, sets users location to make navigation easier
   		if (navigator.geolocation) {
     		navigator.geolocation.getCurrentPosition(function(position) {
-      		var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      			var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-      		var marker = new google.maps.Marker({
-      			map: mapObj.googleMap,
-    			position: pos,
-    			icon: {
-      				path: google.maps.SymbolPath.CIRCLE,
-      				scale: 3
-    			}
-  			})
-    	},
+      			var infowindow = new google.maps.InfoWindow({
+        			map: map,
+        			position: pos,
+        			content: 'Location found using HTML5.'
+      			});
 
-    	//determines geolocation browser support, also from Google
-    	function anonGeo() {
-      		handleNoGeolocation(true);
-    	});
+      			map.setCenter(pos);
+    		}, function() {
+      			handleNoGeolocation(true);
+    		});
   		} else {
     		// Browser doesn't support Geolocation
     		handleNoGeolocation(false);
-  		}
+ 		 }
 
   		//handles failed geolocation
   		function handleNoGeolocation(errorFlag) {
   			if (errorFlag) {
-    			var content = 'Error: The Geolocation service failed.';
+   				var content = 'Error: The Geolocation service failed.';
   			} else {
     			var content = 'Error: Your browser doesn\'t support geolocation.';
   			}
-		}
+  		}
     }
 };
 
@@ -1411,8 +1403,9 @@ var viewModel = {
 	//creates map on page
 	myMap: ko.observable({}),
 
-	//observable for holding input from search box
-	queryVenues: ko.observable('')
+	queryVenues: ko.observable(''),
+
+	events: ko.observableArray(model)
 };
 
 viewModel.model = ko.dependentObservable(function() {

@@ -7,6 +7,7 @@ Access webpage at: http://nickgriffin1.github.io/SxSW-Music-Map/#
 
 ###Frameworks and APIs
 * Google Maps Javascript API
+* Yelp Business API
 * Knockout.js
 * Twitter Bootstrap
 * jQuery
@@ -16,4 +17,5 @@ Access webpage at: http://nickgriffin1.github.io/SxSW-Music-Map/#
 http://stackoverflow.com/questions/12722925/google-maps-and-knockoutjs
 https://developers.google.com/maps/documentation/javascript/examples/event-simple
 https://developers.google.com/maps/documentation/javascript/examples/event-closure
+https://developers.google.com/maps/documentation/javascript/examples/map-geolocation
 http://opensoul.org/2011/06/23/live-search-with-knockoutjs/

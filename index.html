@@ -42,7 +42,7 @@
 
                 <br>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="search">
                     <div class="input-group">
                         <span class="input-group-addon" id="basic-addon1">Search venues</span>
                         <input type="search" class="form-control" aria-describedby="basic-addon1" placeholder="Results display in list view" data-bind="value: queryVenues, valueUpdate: 'keyup'" autocomplete="off">
@@ -52,9 +52,7 @@
                 <br>
 
     			<div class="span12">
-                    <ul data-bind="template: {name: 'venue', foreach: model}"></ul>
-
-                    <script type="text/html" id="venue">
+                    <div data-bind="foreach: viewModel.events">
         				<div class="venue list row">
     	    				<div class="col-md-12 text-left" data-bind="attr: {id : id}">
     	    					<strong class="header" data-bind="text: title"></strong>
@@ -76,7 +74,7 @@
                                 <a href="#" class="btn btn-primary">Back to Map</a>
     	    				</div>
     	    			</div>
-                    </script>
+                    </div>
     			</div>
     		</div>
     	</div>
