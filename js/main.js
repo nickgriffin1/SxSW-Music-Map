@@ -1379,7 +1379,7 @@ ko.bindingHandlers.map = {
         			content: 'Location found using HTML5.'
       			});
 
-      			map.setCenter(pos);
+      			mapObj.googleMap.setCenter(pos);
     		}, function() {
       			handleNoGeolocation(true);
     		});
