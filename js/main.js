@@ -1409,6 +1409,12 @@ var viewModel = {
 	events: ko.observableArray(model)
 };
 
+//sorts the list view alphabetically
+viewModel.events.sort(function(left, right) { 
+	return left.title == right.title ? 0 : (left.title < right.title ? -1 : 1) 
+})
+
+
 viewModel.model = ko.dependentObservable(function() {
     var searchVenues = this.queryVenues().toLowerCase();
 

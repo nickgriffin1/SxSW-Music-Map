@@ -14,6 +14,7 @@ Access webpage at: http://nickgriffin1.github.io/SxSW-Music-Map/#
 
 ###Sources
 
+http://knockoutjs.com/documentation/introduction.html
 http://stackoverflow.com/questions/12722925/google-maps-and-knockoutjs
 https://developers.google.com/maps/documentation/javascript/examples/event-simple
 https://developers.google.com/maps/documentation/javascript/examples/event-closure
