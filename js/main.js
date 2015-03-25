@@ -1378,7 +1378,7 @@ ko.bindingHandlers.map = {
         			position: pos,
         			icon: {
       					path: google.maps.SymbolPath.CIRCLE,
-      					scale: 7
+      					scale: 5
     				}
       			});
     		}, function() {
