@@ -1374,7 +1374,7 @@ ko.bindingHandlers.map = {
       			var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
       			var infowindow = new google.maps.InfoWindow({
-        			map: map,
+        			map: mapObj.googleMap,
         			position: pos,
         			content: 'Location found using HTML5.'
       			});
