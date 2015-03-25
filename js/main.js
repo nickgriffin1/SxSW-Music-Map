@@ -1376,7 +1376,10 @@ ko.bindingHandlers.map = {
       			var infowindow = new google.maps.InfoWindow({
         			map: mapObj.googleMap,
         			position: pos,
-        			content: 'Location found using HTML5.'
+        			icon: {
+      					path: google.maps.SymbolPath.CIRCLE,
+      					scale: 10
+    				}
       			});
 
       			mapObj.googleMap.setCenter(pos);
