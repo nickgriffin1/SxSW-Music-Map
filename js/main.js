@@ -1334,13 +1334,13 @@ ko.bindingHandlers.map = {
   		var marker, i;
 
         //adds the markers to the map from the model array
-        for (x = 0; x < model.length; x++) {
+        for (x = 0; x < viewModel.events().length; x++) {
         	//sets parameters for the markers
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(model[x].lat, model[x].lon),
+				position: new google.maps.LatLng(viewModel.events()[x].lat, viewModel.events()[x].lon),
 				map: mapObj.googleMap,
 				animation: google.maps.Animation.DROP,
-				title: model[x].title
+				title: viewModel.events()[x].title
 			});
 
 			
@@ -1351,7 +1351,7 @@ ko.bindingHandlers.map = {
 					mapObj.googleMap.setCenter(marker.getPosition());
 			
 					infowindow.open(mapObj.googleMap, marker);
-					infowindow.setContent("<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + model[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + model[x].id + "\">Lineup</a>")
+					infowindow.setContent("<h6>" + viewModel.events()[x].title + "</h6><p>" + viewModel.events()[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + viewModel.events()[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + viewModel.events()[x].id + "\">Lineup</a>")
 
 					//bounces marker onclick
 					if (marker.getAnimation() != null) {
