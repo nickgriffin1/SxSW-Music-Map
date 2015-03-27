@@ -21,3 +21,4 @@ https://developers.google.com/maps/documentation/javascript/examples/event-closu
 https://developers.google.com/maps/documentation/javascript/examples/map-geolocation
 http://opensoul.org/2011/06/23/live-search-with-knockoutjs/
 https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example/3059129#3059129
+http://knockoutjs.com/documentation/observableArrays.html
