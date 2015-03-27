@@ -1414,16 +1414,16 @@ viewModel.events.sort(function(left, right) {
 	return left.title == right.title ? 0 : (left.title < right.title ? -1 : 1) 
 })
 
-
-viewModel.model = ko.dependentObservable(function() {
+viewModel.events = ko.dependentObservable(function() {
+	//makes the search bar case insensitive
     var searchVenues = this.queryVenues().toLowerCase();
 
     //ugly search engine for venues, looks through model for keywords and returns if found
-    return ko.utils.arrayFilter(model, function(model) {
-    	if (model.title.toLowerCase().indexOf(searchVenues) >= 0) {
-        	return model.title.toLowerCase().indexOf(searchVenues) >= 0;
-        } else if (model.location.toLowerCase().indexOf(searchVenues) >= 0) {
-        	return model.location.toLowerCase().indexOf(searchVenues) >= 0;
+    return ko.utils.arrayFilter(viewModel.events(), function(array) {
+    	if (array.title.toLowerCase().indexOf(searchVenues) >= 0) {
+        	return array.title.toLowerCase().indexOf(searchVenues) >= 0;
+        } else {
+        	viewModel.events = ko.observableArray(model)
         }
     });
 }, viewModel);
