@@ -1404,8 +1404,10 @@ var viewModel = {
 	//creates map on page
 	myMap: ko.observable({}),
 
+	//empty string for search bar
 	queryVenues: ko.observable(''),
 
+	//turns data model above into an observable array
 	events: ko.observableArray(model)
 };
 
@@ -1418,11 +1420,12 @@ viewModel.events = ko.dependentObservable(function() {
 	//makes the search bar case insensitive
     var searchVenues = this.queryVenues().toLowerCase();
 
-    //ugly search engine for venues, looks through model for keywords and returns if found
+    //looks through model for keywords and returns if found
     return ko.utils.arrayFilter(viewModel.events(), function(array) {
     	if (array.title.toLowerCase().indexOf(searchVenues) >= 0) {
         	return array.title.toLowerCase().indexOf(searchVenues) >= 0;
         } else {
+        	//resets array if not found
         	viewModel.events = ko.observableArray(model)
         }
     });

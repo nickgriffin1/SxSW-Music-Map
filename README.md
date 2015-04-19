@@ -7,7 +7,7 @@ Access webpage at: http://nickgriffin1.github.io/SxSW-Music-Map/#
 
 ###Frameworks and APIs
 * Google Maps Javascript API
-* Yelp Business API
+* Twitter API
 * Knockout.js
 * Twitter Bootstrap
 * jQuery
