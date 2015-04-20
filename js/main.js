@@ -1351,7 +1351,7 @@ ko.bindingHandlers.map = {
 					mapObj.googleMap.setCenter(marker.getPosition());
 			
 					infowindow.open(mapObj.googleMap, marker);
-					infowindow.setContent("<h6>" + viewModel.events()[x].title + "</h6><p>" + viewModel.events()[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + viewModel.events()[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + viewModel.events()[x].id + "\">Lineup</a>")
+					infowindow.setContent("<div><h6>" + viewModel.events()[x].title + "</h6><img src=https://maps.googleapis.com/maps/api/streetview?size=150x150&location=" + viewModel.events()[x].lat + "," + viewModel.events()[x].lon + "><p>" + viewModel.events()[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + viewModel.events()[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + viewModel.events()[x].id + "\">Lineup</a><div>")
 
 					//bounces marker onclick
 					if (marker.getAnimation() != null) {
