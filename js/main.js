@@ -1425,7 +1425,7 @@ viewModel.events = ko.dependentObservable(function() {
     	if (array.title.toLowerCase().indexOf(searchVenues) >= 0) {
         	return array.title.toLowerCase().indexOf(searchVenues) >= 0;
         } else {
-        	//resets array if not found
+        	//resets events
         	viewModel.events = ko.observableArray(model)
         }
     });
