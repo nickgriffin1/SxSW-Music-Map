@@ -14,10 +14,17 @@ body {
 
 a {
 	text-decoration: none;
+	background-color: 
+}
+
+h1 {
+	font-weight: lighter;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .navbar {
-	background-color: black;
+	background:rgba(255,255,255, 0.77);
 }
 
 .header {
@@ -26,12 +33,39 @@ a {
 
 .list {
 	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .venue {
 	border-style: solid;
 	border-width: 3px;
 	border-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f1f1f1;
+}
+
+.lineup {
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	background-color: white;
+}
+
+.btn {
+	margin: 5px;
+}
+
+.input-group {
+	width: 90%;
+}
+
+.event-title {
+	font-size: 18px;
+}
+
+.event-date {
+	font-size: 15px;
 }
 
 #mapDiv {
@@ -39,4 +73,8 @@ a {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+#navbar ul {
+	text-align: right;
 }

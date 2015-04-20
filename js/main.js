@@ -1,12 +1,100 @@
 var model = [
 	{
+		"title": "Auditorium Shores",
+		"id": "auditoriumShores",
+		"location": "800 W Riverside Dr",
+		"lat": 30.262192,
+		"lon": -97.751633,
+		"link": "sxsw.com/music/festival/auditorium-shores",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"My Jerusalem - 5:00PM",
+					"Mac McCaughan - 6:00PM",
+					"Charles Bradley & His Extraordinaires - 7:00PM",
+					"Spoon - 8:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Carson McHone - 5:00PM",
+					"Jackie Green - 6:00PM",
+					"Luther Dickinson - 7:00PM",
+					"Ryan Bingham - 8:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Hunter Sharpe - 2:40PM",
+					"The Eastern Sea - 3:40PM",
+					"BoDeans - 4:40PM",
+					"Mexican Institute of Sound + Toy Selectah - 6:00PM",
+					"Bomba Estereo - 7:00PM",
+					"Intocable - 8:00PM"
+				]
+			}
+		]
+	},
+	{
+		"title": "Austin Music Hall",
+		"id": "austinMusicHall",
+		"location": "208 Nueces St",
+		"lat": 30.266696,
+		"lon": -97.750179,
+		"link": "do512.com/venues/austin-music-hall",
+		"lineup": [
+			{
+				"title": "ICM Partners",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"Peter Rosenberg (Host) - 7:55PM",
+					"Young Money Yawn - 8:15PM",
+					"Dreezy - 8:30PM",
+					"EarthGang - 8:45PM",
+					"Fashawn - 9:00PM",
+					"Dinero Farrar - 9:15PM",
+					"Overdoz - 9:45PM",
+					"Lil Herb - 10:00PM",
+					"Two-9 - 10:15PM",
+					"Remy Banks - 10:30PM",
+					"Little Simz - 10:45PM",
+					"Snootie Wild - 11:00PM",
+					"Domo Genesis - 11:15PM",
+					"Hodgy Beats - 11:30PM",
+					"Freddie Gibbs - 11:45PM",
+					"Shy Glizzy - 12:40AM",
+					"Casey Veggies - 12:55AM",
+					"K Camp - 1:10AM",
+					"Ace Hood - 1:25AM",
+					"Rae Sremmurd - 1:40AM"
+				]
+			}
+		]
+	},
+	{
 		"title": "Barcelona",
 		"id": "barcelona",
 		"location": "209 E 6th St",
 		"lat": 30.267403,
 		"lon": -97.741162,
-		"link": "",
+		"link": "do512.com/venues/barcelona",
 		"lineup": [
+			{
+				"title": "",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Torus - 8:00PM",
+					"Akka - 9:30PM",
+					"Rabbit - 10:45PM",
+					"Eprom - 11:45PM"
+				]
+			},
 			{
 				"title": "",
 				"date": "Wednesday, March 18",
@@ -14,7 +102,7 @@ var model = [
 					"DJ TRE - 8:00PM",
 					"Ikonika - 9:45PM",
 					"Kode9 - 11:15PM",
-					"Taso - 12:30AM",
+					"Jameszoo - 12:45AM",
 					"DJ Spinn - 1:00AM"
 				]
 			},
@@ -25,9 +113,10 @@ var model = [
 					"Landau - 8:00PM",
 					"Dylan Stark - 9:00PM",
 					"Braille - 10:00PM",
-					"DJ Earl - 1:00PM",
-					"L-Vis 1990 - 12:00AM",
-					"Avalon Emerson - 1:00AM"
+					"DJ Earl - 11:00PM",
+					"Taso - 12:30AM",
+					"DJ Spinn - 1:00AM",
+					"Era Footwork Crew - 1:45AM"
 				]
 			},
 			{
@@ -36,11 +125,14 @@ var model = [
 				"setTimes": [
 					"DJ Dana Lu - 8:00PM",
 					"DJ Tiga - 8:30PM",
+					"Gutta - 9:00PM",
+					"Big O - 9:30PM",
 					"Gonzalo Silva - 10:00PM",
 					"Ezrakh - 10:30PM",
 					"Vaneck (Fiinesse) - 11:00PM",
 					"Dougie F - 11:25PM",
-					"Nadus - 1:00AM",
+					"L Vis 1990 - 12:00AM",
+					"Avalon Emerson - 1:00AM",
 					"Sliink - 1:30AM"
 				]
 			}
@@ -54,7 +146,83 @@ var model = [
 		"lon": -97.733316,
 		"link": "spotifyhouse.com",
 		"lineup": [
-
+			{
+				"title": "",
+				"date": "Sunday, March 15",
+				"setTimes": [
+					"James Davis - 1:45PM",
+					"Marian Hill - 2:45PM",
+					"Centavrvs - 4:00PM",
+					"Conrad - 4:45PM",
+					"Amason - 6:15PM",
+					"Stromae - 8:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Monday, March 16",
+				"setTimes": [
+					"SoulCycle x Ryan Hemsworth - 9:30AM",
+					"MLKMN and El Dusty - 12:00PM",
+					"Speedy Ortiz - 1:00PM",
+					"Buraka Som Sistema - 2:15PM",
+					"The Vaccines - 3:15PM",
+					"Ryan Hemsworth - 4:00PM",
+					"Run The Jewels - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"SoulCycle x Gorgon City - 9:30AM",
+					"VERITE - 12:00PM",
+					"BORNS - 1:00PM",
+					"Ryn Weaver - 2:30PM",
+					"Gorgon City - 3:30PM",
+					"ODESZA - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"SoulCycle x Jonathan Toubin - 9:30AM",
+					"Cam - 12:00PM",
+					"Sam Hunt - 1:00PM",
+					"Leon Bridges - 2:30PM",
+					"Houndmouth - 3:30PM",
+					"Ryan Bingham - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"SoulCycle x Hudson Mowhawke - 9:30AM",
+					"Twin Shadow (Acoustic) - 12:00PM",
+					"James Bay - 1:00PM",
+					"Tobias Jesso Jr. - 2:30PM",
+					"Ibeyi - 3:00PM",
+					"Big Data - 4:30PM",
+					"Cazzette - 5:15PM",
+					"MisterWives - 6:00PM",
+					"Hudson Mowhawke - 6:45PM",
+					"Special Guest - 7:45PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"SoulCycle x Just Blaze - 9:30AM",
+					"SZA - 1:00PM",
+					"Pell - 2:00PM",
+					"Wale - 2:45PM",
+					"PRhyme - 3:30PM",
+					"Joey Bada$$ - 5:00PM"
+				]
+			}
 		]
 	},
 	{
@@ -90,6 +258,40 @@ var model = [
 					"Milky Chance - 12:15AM"
 				]
 			},
+			{
+				"title": "Spin Showcase",
+				"date": "Friday (day), March 20",
+				"setTimes": [
+					"~ Main Stage ~",
+					"Viet Cong - 12:00PM",
+					"Kate Boy - 1:00PM",
+					"Will Butler of Arcade Fire - 2:30PM",
+					"Twin Shadow - 3:00PM",
+					"Run the Jewels - 4:00PM",
+					"~ North Stage ~",
+					"METZ - 12:30PM",
+					"Screaming Females - 1:30PM",
+					"Earl Sweatshirt - 2:00PM",
+					"Cortney Barnett - 3:30PM"
+				]
+			},
+			{
+				"title": "Powered by SoundExchange",
+				"date": "Friday (night), March 20",
+				"setTimes": [
+					"Jess Glynne - 7:50PM",
+					"Johnny Stimson - 8:10PM",
+					"The Districts - 8:30PM",
+					"Laura Welsh - 9:10PM",
+					"The Ting Tings - 9:30PM",
+					"Meg Mac - 10:10PM",
+					"Clean Bandit - 10:30PM",
+					"Elle King - 11:10PM",
+					"Bleachers - 11:30PM",
+					"Laleh - 12:10AM",
+					"Marina and the Diamonds - 12:30AM"
+				]
+			}
 		]
 	},
 	{
@@ -101,7 +303,21 @@ var model = [
 		"link": "empireatx.com",
 		"lineup": [
 			{
-				"title": "Presented by Cómeme",
+				"title": "HE^RD x PAYPAL Music Tech Mashup",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Hard Proof - 7:00PM",
+					"Applied Pressure - 8:15PM",
+					"Roger Sellers - 9:45PM",
+					"Goldfish - 10:30PM",
+					"Kastle - 11:15PM",
+					"UZ - 11:50PM",
+					"Daedelus - 12:30AM",
+					"TOKiMONSTA - 1:20AM"
+				]
+			},
+			{
+				"title": "Cómeme",
 				"date": "Wednesday, March 18",
 				"setTimes": [
 					"Cristian S. - 8:00PM",
@@ -112,7 +328,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Monstercat",
+				"title": "Monstercat",
 				"date": "Thursday, March 19",
 				"setTimes": [
 					"Aero Chord",
@@ -122,7 +338,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Leaving Records",
+				"title": "Leaving Records",
 				"date": "Friday, March 20",
 				"setTimes": [
 					"Brogan Bently - 9:00PM",
@@ -134,7 +350,7 @@ var model = [
 				]
 			},
 			{
-				"title": "Presented by Neon Gold",
+				"title": "Neon Gold",
 				"date": "Saturday, March 21",
 				"setTimes": [
 					"VÉRITÉ - 8:30PM",
@@ -148,16 +364,105 @@ var model = [
 		]
 	},
 	{
+		"title": "Empire Garage",
+		"id": "empireGarage",
+		"location": "604 E 7th St",
+		"lat": 30.267621,
+		"lon": -97.736167,
+		"link": "empireatx.com",
+		"lineup": [
+			{
+				"title": "HE^RD x PAYPAL Music Tech Mashup",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Ruby Jane - 7:00PM",
+					"SPEAK - 7:45PM",
+					"Marmalakes - 8:30PM",
+					"Shakey Graves - 9:15PM",
+					"The London Souls - 10:00PM",
+					"Gary Clark Jr. - 12:30AM"
+				]
+			},
+			{
+				"title": "Ray-Ban x Boiler Room 006",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Shash'U - 9:30PM",
+					"Stwo - 10:15PM",
+					"Madlib - 11:00PM",
+					"BADBADNOTGOOD - 11:45PM",
+					"Rae Sremmurd - 12:15AM",
+					"Kaytranada - 12:30AM"
+				]
+			},
+			{
+				"title": "PC Music Showcase",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"easyFun - 8:30PM",
+					"Kane West - 9:00PM",
+					"Spinee - 9:30PM",
+					"Felicita - 10:00PM",
+					"Lil Data - 10:30PM",
+					"Danny L Harle - 11:00PM",
+					"GFOTY - 11:30PM",
+					"A.G. Cook - 12:00AM",
+					"Hannah Diamond - 12:30AM",
+					"QT - 1:00AM",
+					"Sophie - 1:15AM"
+				]
+			},
+			{
+				"title": "Stones Throw",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Stones Throw 56 DJs - 8:00PM",
+					"Mild High Club - 9:00PM",
+					"Silk Rhodes - 9:30PM",
+					"Nx Worries - 10:00PM",
+					"Homeboy Sandman - 10:30PM",
+					"Tuxedo - 11:10PM",
+					"Funkmosphere Party w/ DJs Dam-Funk, Peanut Butter Wolf and J Rocc - 12:00AM"
+				]
+			},
+			{
+				"title": "Neon Gold",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Tigertown - 8:00PM",
+					"Seinabo Sey - 9:00PM",
+					"Christine and the Queens - 10:00PM",
+					"Marina and the Diamonds - 11:00PM",
+					"MR MS - 12:00AM",
+					"The Knocks - 1:00AM"
+				]
+			}
+		]
+	},
+	{
 		"title": "House of Vans",
 		"id": "houseofVans",
-		"location": "Mowhawk, 912 Red River St",
+		"location": "Mohawk, 912 Red River St",
 		"lat": 30.270153,
 		"lon": -97.736086,
 		"link": "vans.com/sxsw15.html",
 		"lineup": [
 			{
-				"title": "Pitchfork (day) and Vans (night)",
-				"date": "Wednesday, March 18",
+				"title": "",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"~ Outdoor Stage ~",
+					"Angel Olsen",
+					"+ more TBA",
+					"~ Indoor Stage ~",
+					"Hudson Mowhawke",
+					"+ more TBA"
+					
+				]
+			},
+			{
+				"title": "Pitchfork",
+				"date": "Wednesday (day), March 18",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"Torres - 12:30PM",
@@ -166,12 +471,6 @@ var model = [
 					"Viet Cong - 3:15PM",
 					"Courtney Barnett - 4:15PM",
 					"Rae Sremmurd - 5:15PM",
-					"Girlpool - 8:00PM",
-					"Alvvays - 9:00PM",
-					"Metz - 10:00PM",
-					"The Damned - 11:00PM",
-					"Thee Oh Sees - 12:00AM",
-					"Future Islands - 1:00AM",
 					"~ Indoor Stage ~",
 					"Lydia Ainsworth - 1:00PM",
 					"Natalie Prass - 2:00PM",
@@ -179,6 +478,20 @@ var model = [
 					"Shamir - 3:30PM",
 					"AG Cook - 4:15PM",
 					"Sophie - 5:00PM",
+				]
+			},
+			{
+				"title": "Vans",
+				"date": "Wednesday (night), March 18",
+				"setTimes": [
+					"~ Outdoor Stage ~",
+					"Girlpool - 8:00PM",
+					"Alvvays - 9:00PM",
+					"Metz - 10:00PM",
+					"The Damned - 11:00PM",
+					"Thee Oh Sees - 12:00AM",
+					"Future Islands - 1:00AM",
+					"~ Indoor Stage ~",
 					"Sal Show - 7:45PM",
 					"Free Weed - 8:15PM",
 					"The Shivas - 9:15PM",
@@ -189,8 +502,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Pitchfork (day) and Domino Recording (night)",
-				"date": "Thursday, March 19",
+				"title": "Pitchfork",
+				"date": "Thursday (day), March 19",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"Hundred Waters - 12:30PM",
@@ -200,17 +513,25 @@ var model = [
 					"Waxahatchee - 3:45PM",
 					"Vince Staples - 4:30PM",
 					"Migos - 5:15PM",
+					"~ Indoor Stage ~",
+					"Bully - 1:00PM",
+					"Makthaverskan - 2:00PM",
+					"Untold - 3:00PM",
+					"Twerps - 4:00PM",
+					"Windows98 (Will Butler of Arcade Fire) - 4:45PM"
+				]
+			},
+			{
+				"title": "Domino Recording",
+				"date": "Thursday (night), March 19",
+				"setTimes": [
+					"~ Outdoor Stage ~",
 					"Alex G - 9:00PM",
 					"Bob Moses - 10:00PM",
 					"Mathew E. White - 11:00PM",
 					"Hamilton Leithauser - 12:00AM",
 					"Laura Marling - 1:00AM",
 					"~ Indoor Stage ~",
-					"Bully - 1:00PM",
-					"Makthaverskan - 2:00PM",
-					"Untold - 3:00PM",
-					"Twerps - 4:00PM",
-					"Windows98 (Win Butler of Arcade Fire) - 4:45PM",
 					"Meatbodies - 8:30PM",
 					"Girl Band - 9:30PM",
 					"Boxed In - 10:30PM",
@@ -219,8 +540,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Windish (day) and Rhymesayers (night)",
-				"date": "Friday, March 20",
+				"title": "Windish",
+				"date": "Friday (day), March 20",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"JUCE - 12:30PM",
@@ -229,6 +550,19 @@ var model = [
 					"BØRNS - 3:30PM",
 					"Lido - 4:20PM",
 					"ODESZA - 5:20PM",
+					"~ Indoor Stage ~",
+					"Only Real - 12:00PM",
+					"Son Lux - 1:00PM",
+					"Shura - 2:00PM",
+					"Wolf Alice - 4:00PM",
+					"Cathedrals - 4:50PM"
+				]
+			},
+			{
+				"title": "Rhymesayers",
+				"date": "Friday (night), March 20",
+				"setTimes": [
+					"~ Outdoor Stage ~",
 					"Get Cyphy - 8:00PM",
 					"deM atlaS - 9:00PM",
 					"PROF - 9:45PM",
@@ -237,11 +571,6 @@ var model = [
 					"Dilated Peoples - 11:45PM",
 					"Atmosphere - 12:45PM",
 					"~ Indoor Stage ~",
-					"Only Real - 12:00PM",
-					"Son Lux - 1:00PM",
-					"Shura - 2:00PM",
-					"Wolf Alice - 4:00PM",
-					"Cathedrals - 4:50PM",
 					"DJ Halo - 7:30PM",
 					"Modie Black - 8:15PM",
 					"Paranoid Castle - 9:15PM",
@@ -252,8 +581,8 @@ var model = [
 				]
 			},
 			{
-				"title": "Fun Fun Fun (day) and Wedidit (night)",
-				"date": "Saturday, March 21",
+				"title": "Fun Fun Fun",
+				"date": "Saturday (day), March 21",
 				"setTimes": [
 					"~ Outdoor Stage ~",
 					"The Blind Shake - 12:30PM",
@@ -261,6 +590,20 @@ var model = [
 					"Ceremony - 2:25PM",
 					"Swervedriver - 3:35PM",
 					"Ghostface Killah w/ Badbadnotgood - 4:50PM",
+					"~ Indoor Stage ~",
+					"The Outfit - 12:45PM",
+					"Lust for Youth - 1:30PM",
+					"Orthy - 2:15PM",
+					"Roger Sellers - 3:00PM",
+					"Rat Fist (Randy of No Age + Sean of Pissed Jeans) - 3:45PM",
+					"Code Orange - 4:30PM",
+					"Powertrip - 5:10PM"
+				]
+			},
+			{
+				"title": "Wedidit",
+				"date": "Saturday (night), March 21",
+				"setTimes": [
 					"Nick Melons 8:15PM",
 					"Eric Dingus - 9:00PM",
 					"D33J - 9:30PM",
@@ -270,14 +613,6 @@ var model = [
 					"Tory Lanez - 11:40PM",
 					"Shlohmo - 12:00AM",
 					"TBD Special Guest - 1:00AM",
-					"~ Indoor Stage ~",
-					"The Outfit - 12:45PM",
-					"Lust for Youth - 1:30PM",
-					"Orthy - 2:15PM",
-					"Roger Sellers - 3:00PM",
-					"Rat Fist (Randy of No Age + Sean of Pissed Jeans) - 3:45PM",
-					"Code Orange - 4:30PM",
-					"Powertrip - 5:10PM"
 				]
 			}
 		]
@@ -360,37 +695,47 @@ var model = [
 	{
 		"title": "ACL Live",
 		"id": "aclLive",
-		"location": "Moody Theater, 310 Willie Nelson Boulevard",
+		"location": "Moody Theater, 310 Willie Nelson Blvd",
 		"lat": 30.265438,
 		"lon": -97.747149,
 		"link": "acl-live.com",
 		"lineup": [
 			{
-				"title": "",
+				"title": "Beer n Tacos x Street Execs",
 				"date": "Wednesday, March 18",
 				"setTimes": [
-					
+					"Fort Knox - 7:30PM",
+					"Kayoo - 7:35PM",
+					"Tru-TV - 8:10PM",
+					"Money Makin Nique - 8:30PM",
+					"Runway Richy - 8:55PM",
+					"Bankroll Fresh - 9:20PM",
+					"Cap 1 - 9:40PM",
+					"K Camp - 10:00PM",
+					"Travis Porter - 10:30PM",
+					"Young Dolph - 11:00PM",
+					"Trae the Truth - 11:30PM",
+					"2 Chainz - 12:00AM",
+					"Dipset - 12:50PM"		
 				]
 			},
 			{
-				"title": "",
+				"title": "101X",
 				"date": "Thursday, March 19",
 				"setTimes": [
-
+					"Lieutenant - 7:00PM",
+					"Family of the Year - 8:00PM",
+					"Catfish and the Bottlemen - 9:00PM",
+					"Big Data - 10:00PM",
+					"AWOLNATION - 11:00PM"
 				]
 			},
 			{
 				"title": "",
 				"date": "Friday, March 20",
 				"setTimes": [
-
-				]
-			},
-			{
-				"title": "",
-				"date": "Saturday, March 21",
-				"setTimes": [
-
+					"Taylor Gang - 12:00AM",
+					"Wiz Khalifa - 12:15AM"
 				]
 			}
 		]
@@ -398,105 +743,692 @@ var model = [
 	{
 		"title": "Hype Hotel",
 		"id": "hypeHotel",
-		"location": "Fair Market, 1100 East 5th Street",
+		"location": "Fair Market, 1100 E 5th St",
 		"lat": 30.264017,
 		"lon": -97.731517,
 		"link": "hypem.com/hotel/2015",
 		"lineup": [
 			{
-				"title": "",
-				"date": "Wednesday, March 18",
+				"title": "The Syndicate",
+				"date": "Tuesday, March 17",
 				"setTimes": [
-
+					"Parlour Tricks - 8:00PM",
+					"Amason - 9:00PM",
+					"San Fermin - 10:00PM",
+					"Milo Green - 11:00PM",
+					"ODESZA - 12:00AM",
+					"Spoon - 1:00AM"
 				]
 			},
+			{
+				"title": "All Things Go + Blah Blah Blah Science",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Cathedrals - 12:00PM",
+					"Only Real - 1:00PM",
+					"Circa Waves - 2:00PM",
+					"Shura - 3:00PM",
+					"Hundred Waters - 4:00PM",
+					"Alvvays - 5:00PM",
+					"COIN - 8:00PM",
+					"Laura Welsh - 9:00PM",
+					"Ryn Weaver - 10:00PM",
+					"Best Coast - 11:00PM",
+					"Wolf Alice - 12:00AM"
+				]
+			},
+			{
+				"title": "Gorilla vs Bear",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"Natalie Prass - 12:00PM",
+					"The Disctricts - 1:00PM",
+					"King Tuff - 2:00PM",
+					"Twerps - 3:00PM",
+					"Viet Cong - 4:00PM",
+					"Twin Shadow - 5:00PM",
+					"Kero Kero Bonito - 8:00PM",
+					"Chastity Belt - 9:00PM",
+					"Hinds - 10:00PM",
+					"Yumi Zouma - 11:00PM",
+					"Leon Bridges - 12:00AM",
+					"Autre Ne Veut - 1:00AM"
+				]
+			},
+			{
+				"title": "Cruel Rhythm",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Lydia Ainsworth - 12:00PM",
+					"Christine and the Kings - 1:00PM",
+					"George Maple - 2:00PM",
+					"Gorgon City - 3:00PM",
+					"Raury - 4:00PM",
+					"ILoveMakonnen - 5:00PM",
+					"Kari Faux - 8:00PM",
+					"Daniel Wilson - 9:00PM",
+					"Seinabo Sey - 11:00PM",
+					"Year & Years - 12:00AM",
+					"Rae Sremmurd - 1:00AM"
+				]
+			},
+			{
+				"title": "Pigeons & Planes",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Ghibli - 12:00PM",
+					"Lord RAJA - 1:00PM",
+					"Redhinho - 2:00PM",
+					"A.G. Cook - 3:00PM",
+					"Sophie - 4:00PM",
+					"Hudson Mowhawke - 5:00PM",
+					"Tove Styrke - 8:00PM",
+					"Mick Jenkins - 9:00PM",
+					"Goldlink - 10:00PM",
+					"Tei Shi - 11:00PM",
+					"Ryan Hemsworth - 12:00AM",
+					"Earl Sweatshirt - 1:00AM"
+				]
+			}
+		]
+	},
+	{
+		"title": "Tumblr IRL",
+		"id": "tumblrIRL",
+		"location": "Ironwood Hall, 505 E 7th St",
+		"lat": 30.267326,
+		"lon": -97.737532,
+		"link": "tumblrirl.do512.com/tumblrirl2015",
+		"lineup": [
+			{
+				"title": "Artist: Milan Zrnic",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Twin Shadow - 7:00PM"
+				]
+			},
+			{
+				"title": "Artists: Traceloops, Wolf Mask, Ana Tortos",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"Courtney Barnett - 1:00PM",
+					"ODESZA - 11:00PM"
+				]
+			},
+			{
+				"title": "Artist: Eric Chase Anderson",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Tobias Jesso Jr. - 1:00PM",
+					"Travis Scott - 7:00PM"
+				]
+			},
+			{
+				"title": "Artist: Gunnar Deatherage",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Houndmouth - 1:00PM"
+				]
+			}
+		]
+	},
+	{
+		"title": "Clive Bar",
+		"id": "cliveBar",
+		"location": "609 Davis St",
+		"lat": 30.260029,
+		"lon": -97.738583,
+		"link": "schedule.sxsw.com/events?lsort=venue_all_days&venue=Clive+Bar",
+		"lineup": [
+			{
+				"title": "StubHub",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"The Mowgli's - 9:00PM",
+					"Charles Bradley & His Extraordinaires - 10:00PM",
+					"Future Islands - 11:00PM",
+					"Portugal. The Man - 12:00AM"
+				]
+			},
+			{
+				"title": "StubHub",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Elliphant - 9:00PM",
+					"The Cribs - 10:00PM",
+					"MS MR - 11:00PM",
+					"The Vaccines - 12:00AM"
+				]
+			},
+			{
+				"title": "StubHub",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"San Fermin - 9:00PM",
+					"BORNS - 10:00PM",
+					"Mew - 11:00PM"
+				]
+			},
+			{
+				"title": "Tilly's",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Kehlani - 9:00PM",
+					"Domo Genesis - 10:00PM",
+					"Hodgy Beats - 11:00PM",
+					"IAMSU! - 12:00AM"
+				]
+			},
+			{
+				"title": "SXAméricas: Zona Indie",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Clubz - 8:00PM",
+					"Hey Chica! - 9:00PM",
+					"60 Tigres - 10:00PM",
+					"Agoraphobia - 11:00PM",
+					"Prefiero Fernandez - 12:00AM",
+					"El Conjunto Nueva Ola - 1:00AM"
+				]
+			}
+		]
+	},
+	{
+		"title": "The Main",
+		"id": "theMain",
+		"location": "610 E 6th St",
+		"lat": 30.266609,
+		"lon": -97.736571,
+		"link": "schedule.sxsw.com/events?lsort=venue_all_days&venue=Main",
+		"lineup": [
+			{
+				"title": "Chicago Made",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"Leather Corduroys - 8:00PM",
+					"Dos Santos: Anti-Beat Orquesta - 9:00PM",
+					"Gemini Club - 10:00PM",
+					"Hypnotic Brass Ensemble - 11:00PM",
+					"Twin Peaks - 12:00AM",
+					"Vic Mensa - 1:00AM"
+				]
+			},
+			{
+				"title": "IHEARTCOMIX",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Wrestlers - 8:15PM",
+					"Lindsay Lowend & Jonah Baseball - 8:45PM",
+					"Remi. - 9:30PM",
+					"Hermitude - 10:15PM",
+					"Carmada - 11:00PM",
+					"Just Blaze - 12:30AM"
+				]
+			},
+			{
+				"title": "Biz 3",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"Phantoms - 8:00PM",
+					"Leaf - 8:35PM",
+					"Mystery Skulls - 9:00PM",
+					"Mark Johns - 9:30PM",
+					"Holt - 11:05PM",
+					"Ho99o9 - 11:40PM",
+					"Tory Lanez - 12:10AM",
+					"Heems - 12:40PM",
+					"Migos - 1:15AM"
+				]
+			},
+			{
+				"title": "Mad Decent",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"JSTJR - 8:00PM",
+					"Ape Drums - 8:50PM",
+					"Compass (Mexican Institute of Sound + Toy Selectah) - 10:10PM",
+					"Elliphant - 10:45PM",
+					"Trippy Turtle - 11:15PM",
+					"Zeds Dead - 1:00AM"
+				]
+			},
+			{
+				"title": "Check Yo Ponytail, Fool's Gold & Mad Decent Super Party",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Two Fresh - 7:30PM",
+					"Remy Banks - 8:20PM",
+					"BOSCO - 8:40PM",
+					"Rome Fortune - 9:05PM",
+					"Pomo - 9:45PM",
+					"Sweater Beats - 10:30PM",
+					"Mike WiLL Made-It - 1:15AM"
+				]
+			}
+		]
+	},
+	{
+		"title": "IFC Fairgrounds",
+		"id": "IFCFairgrounds",
+		"location": "606 E 3rd St",
+		"lat": 30.262808,
+		"lon": -97.736735,
+		"link": "ifc.com/sxsw/about",
+		"lineup": [
 			{
 				"title": "",
 				"date": "Thursday, March 19",
 				"setTimes": [
-
+					"Dry the River - 4:30PM",
+					"Colony House - 5:40PM",
+					"Jukebox the Ghost - 6:50PM",
+					"Rubblebucket - 8:00PM",
+					"Gorgon City Live - 9:10PM"
 				]
 			},
 			{
 				"title": "",
 				"date": "Friday, March 20",
 				"setTimes": [
-
+					"K.Flay - 4:30PM",
+					"Twin Peaks - 5:40PM",
+					"Priory - 6:50PM",
+					"Robert Delong - 8:00PM",
+					"ODESZA - 9:10PM"
 				]
 			},
 			{
 				"title": "",
 				"date": "Saturday, March 21",
 				"setTimes": [
-
+					"COIN - 4:30PM",
+					"HOLYCHILD - 5:40PM",
+					"Sun Club - 6:50PM",
+					"X Ambassadors - 8:00PM",
+					"Smallpools - 9:10PM"
+				]	
+			}
+		]
+	},
+	{
+		"title": "Yahoo's Brazos Hall",
+		"id": "yahoosBrazosHall",
+		"location": "204 E 4th St",
+		"lat": 30.265692,
+		"lon": -97.741781,
+		"link": "do512.com/venues/brazos-hall",
+		"lineup": [
+			{
+				"title": "Powered by Yahoo!",
+				"date": "Tuesday, March 17",
+				"setTimes": [
+					"North of Nine - 8:00PM",
+					"James Hersey - 9:00PM",
+					"Buffalo Sun - 10:00PM",
+					"LANY - 11:00PM",
+					"Milky Chance - 12:00AM"
+				]
+			},
+			{
+				"title": "Atlantic Records’ Loud Pack",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Spenzo - 9:00PM",
+					"Kap G - 9:20PM",
+					"Fat Trel - 9:40PM",
+					"Curren$y - 10:35PM",
+					"Special Guest - 11:05PM",
+					"Kevin Gates - 11:45PM",
+					"Ty Dolla $ign - 12:25PM",
+					"DJ Drama - 12:55PM"
+				]
+			},
+			{
+				"title": "Powered by Yahoo!",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"SLOTHRUST - 8:00PM",
+					"Elle King - 9:00PM",
+					"The Apache Relay - 10:00PM",
+					"Delta Spirit - 11:00PM",
+					"Heartless Bastards - 12:00AM",
+					"Black Joe Lewis - 1:00AM"
+				]
+			},
+			{
+				"title": "Powered by Yahoo!",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Heat (Montreal) - 8:00PM",
+					"Bully - 8:50PM",
+					"What Moon Things - 9:40PM",
+					"CREEPOID - 10:30PM",
+					"Speedy Ortiz - 11:20PM",
+					"Failure - 12:15PM"
+				]
+			},
+			{
+				"title": "Yahoo Presents: The Rodeo Tour + Special Guests",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Shy Glizzy - 8:45PM",
+					"Hudson Mowhawke - 9:35PM",
+					"Metro Boomin - 11:15PM",
+					"Travis Scott - 11:45PM",
+					"Young Thug - 11:45PM"
+				]	
+			}
+		]
+	},
+	{
+		"title": "The Belmont",
+		"id": "theBelmont",
+		"location": "305 W 6th St",
+		"lat": 30.268546,
+		"lon": -97.745578,
+		"link": "do512.com/venues/the-belmont",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"July Talk",
+					"The Karma Killers",
+					"Nova Rockafeller",
+					"Tove Lo",
+					"Tribe Society"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Sonny Digital - 8:00PM",
+					"Toomp - 9:30PM",
+					"Just Blaze - 11:00PM",
+					"Mannie Fresh - 12:30PM"
+				]
+			},
+			{
+				"title": "AllHipHop",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Squirm G - 8:30PM",
+					"I AM ACTION - 9:35PM",
+					"CHAD B - 9:50PM",
+					"D.Chamberz - 10:05",
+					"Doughbeezy - 10:20PM",
+					"LUA PROC - 11:00PM",
+					"Gillie Da Kid - 11:30PM",
+					"Lil Durk - 12:00AM",
+					"Kirk Knight - 12:25AM",
+					"CJ Fly - 12:35AM",
+					"Raekwon & Ghostface Killah - OB4CL 20th Anniversary - 1:20AM"
+				]	
+			}
+		]
+	},
+	{
+		"title": "Radio Day Stage Austin Convention Center",
+		"id": "radioDayStage",
+		"location": "531 E 4th St (Ballroom D)",
+		"lat": 30.263427,
+		"lon": -97.739809,
+		"link": "do512.com/venues/radio-day-stage-austin-convention-center",
+		"lineup": [
+			{
+				"title": "Radionica Colombia and KCRW",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"Zalama Crew - 11:00AM",
+					"Bomba Estéreo - 12:00PM",
+					"James Bay - 2:00PM",
+					"Laura Marling - 3:00PM",
+					"Milky Chance - 4:00PM"
+				]
+			},
+			{
+				"title": "KCSN",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"The Ting Tings - 2:00PM",
+					"Letts - 3:00PM",
+					"Zella Day - 4:00PM",
+					"Scott Weiland and The Wildabouts - 5:00PM"
+				]
+			},
+			{
+				"title": "WFUV, WXPN, KUTX, The Current, KXT",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Twin Shadow - 12:00PM",
+					"Gang of Four - 1:00PM",
+					"Ryan Bingham - 2:00PM",
+					"Best Coast - 3:00PM",
+					"Madisen Ward and The Mama Bear - 4:00PM",
+					"Courtney Barnett - 5:00PM"
+				]
+			},
+			{
+				"title": "SXSWfm",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Ball Park Music - 12:00PM",
+					"No Brain - 1:00PM",
+					"Cold Fronts - 2:00PM"
+				]	
+			}
+		]
+	},
+	{
+		"title": "Fader Fort",
+		"id": "faderFort",
+		"location": "1101 E 5th St",
+		"lat": 30.263498,
+		"lon": -97.731366,
+		"link": "thefader.com/event/fader-fort-austin-2015",
+		"lineup": [
+			{
+				"title": "",
+				"date": "Wednesday, March 18",
+				"setTimes": [
+					"3D Na'Tee - 1:00PM",
+					"Girl Band - 1:30PM",
+					"Elliot Moss - 2:15PM",
+					"Kap G - 3:00PM",
+					"Bully - 3:45PM",
+					"Stromae - 4:30PM",
+					"The Cribs - 5:15PM",
+					"Sam Hunt - 6:00PM",
+					"Dej Loaf - 6:45PM",
+					"Chance the Rapper & The Social Experiment - 7:30PM",
+					"~ DJ Sets ~",
+					"Wildarms - 1:00PM",
+					"Uniqu3 - 3:00PM",
+					"OG Ron C - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Thursday, March 19",
+				"setTimes": [
+					"QT - 1:30PM",
+					"Shamir - 2:15PM",
+					"Wolf Alice - 3:00PM",
+					"Seinabo Sey - 3:45PM",
+					"Shlohmo - 4:30PM",
+					"Skepta - 5:15PM",
+					"BADBADNOTGOOD & Ghostface Killah - 6:00PM",
+					"Bleachers - 6:45PM",
+					"Mike Will Made-it & friends - 7:30PM",
+					"~ DJ Sets ~",
+					"Joe Kay - 1:00PM",
+					"The Whooligan - 3:00PM",
+					"Spazzkid - 5:00PM"
+				]
+			},
+			{
+				"title": "",
+				"date": "Friday, March 20",
+				"setTimes": [
+					"Romans - 1:30PM",
+					"The Districts - 2:15PM",
+					"Tei Shi - 3:00PM",
+					"Years & Years - 3:45PM",
+					"Kehlani - 4:30PM",
+					"Viet Cong - 5:15PM",
+					"Migos - 6:00PM",
+					"Special Guest - 6:15PM",
+					"Special Guest - 7:30PM",
+					"~ DJ Sets ~",
+					"Teklife: DJ Spinn and Taso - 1:00PM",
+					"Peter Rosenberg - 3:00PM",
+					"Gorgon City - 5:00PM"
+				]	
+			},
+			{
+				"title": "",
+				"date": "Saturday, March 21",
+				"setTimes": [
+					"Hinds - 1:30PM",
+					"Kali Uchis - 2:15PM",
+					"Girlpool - 3:00PM",
+					"Vince Staples - 3:45PM",
+					"Sick Feeling - 4:30PM",
+					"Alex G - 5:15PM",
+					"Kevin Gates - 6:00PM",
+					"Special Guest - 6:45PM",
+					"Tink - 7:30PM",
+					"Hudson Mowhawke - 8:15PM",
+					"Special Guest - 9:00PM",
+					"~ DJ Sets ~",
+					"Austin Millz - 1:00PM",
+					"Ballers Eve - 3:00PM",
+					"Brenmar - 5:00PM"
 				]
 			}
 		]
 	}
 ];
 
-//collapses navbar onclick
-$('.nav a').on('click', function(){
-    $(".navbar-toggle").click() 
-});
-
-function scroller(id) {
-
-}
-
 //custom knockout binding to initialize map
 ko.bindingHandlers.map = {
-    init: function (element, valueAccessor, allBindingsAccessor, viewModel) {
+    init: function(element, valueAccessor, allBindingsAccessor, viewModel) {
         var mapObj = ko.utils.unwrapObservable(valueAccessor());
-
-        var latLng = new google.maps.LatLng(
-            ko.utils.unwrapObservable(mapObj.lat),
-            ko.utils.unwrapObservable(mapObj.lng)
-        );
 
         var mapOptions = { 
         	center: { lat: 30.267392, lng: -97.740155 },
-            zoom: 15, 
+            zoom: 15
         };
 
         //creates map using mapOptions to specify initial zoom and placement
         mapObj.googleMap = new google.maps.Map(element, mapOptions);
 
         //used in for loop to add event listener to the markers, implemented outside of for loop as a closure
-        function eventListenerMaker(marker, x) {
-        	//zooms and centers map onclick of marker
-			google.maps.event.addListener(marker, 'click', function() {
-				mapObj.googleMap.setZoom(17);
-				mapObj.googleMap.setCenter(marker.getPosition());
-				infowindow.open(mapObj.googleMap, marker);
-			});
-
-			//onclick the infowindow will display relevant information to the venue
-  			var infowindow = new google.maps.InfoWindow({
-  				content: "<h6>" + model[x].title + "</h6><p>" + model[x].location + "</p><a>" + model[x].link + "</a><br><a type=\"button\" class=\"btn btn-default\" href=\"#" + model[x].id + "\">Lineup</a>"
-			});
+    	function eventListenerMaker(marker, x) {
+        	
   		}
 
+  		var infowindow = new google.maps.InfoWindow();
+
+  		var marker, i;
+
         //adds the markers to the map from the model array
-        for (x = 0; x < model.length; x++) {
+        for (x = 0; x < viewModel.events().length; x++) {
         	//sets parameters for the markers
 			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(model[x].lat, model[x].lon),
+				position: new google.maps.LatLng(viewModel.events()[x].lat, viewModel.events()[x].lon),
 				map: mapObj.googleMap,
 				animation: google.maps.Animation.DROP,
-				title: model[x].title
+				title: viewModel.events()[x].title
 			});
 
-			eventListenerMaker(marker, x);
-  		};
+			
+			//zooms and centers map onclick of marker with closure
+			google.maps.event.addListener(marker, 'click', (function(marker, x) {
+				return function () {
+					mapObj.googleMap.setZoom(17);
+					mapObj.googleMap.setCenter(marker.getPosition());
+			
+					infowindow.open(mapObj.googleMap, marker);
+					infowindow.setContent("<div><h6>" + viewModel.events()[x].title + "</h6><img src=https://maps.googleapis.com/maps/api/streetview?size=150x150&location=" + viewModel.events()[x].lat + "," + viewModel.events()[x].lon + "><p>" + viewModel.events()[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + viewModel.events()[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + viewModel.events()[x].id + "\">Lineup</a><div>")
+
+					//bounces marker onclick
+					if (marker.getAnimation() != null) {
+						marker.setAnimation(null);
+					} else {
+						marker.setAnimation(google.maps.Animation.BOUNCE);
+
+						//stops marker from bouncing after 3 seconds
+						setTimeout(function() {
+							marker.setAnimation(null);
+						}, 3000);
+					}
+				}
+			})(marker, x));	
+  		}
+
+  		//from google's API page, sets users location to make navigation easier
+  		if (navigator.geolocation) {
+    		navigator.geolocation.getCurrentPosition(function(position) {
+      			var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+      			var marker = new google.maps.Marker({
+        			map: mapObj.googleMap,
+        			position: pos,
+        			icon: {
+      					path: google.maps.SymbolPath.CIRCLE,
+      					scale: 5
+    				}
+      			});
+    		}, function() {
+      			handleNoGeolocation(true);
+    		});
+  		} else {
+    		// Browser doesn't support Geolocation
+    		handleNoGeolocation(false);
+ 		 }
+
+  		//handles failed geolocation
+  		function handleNoGeolocation(errorFlag) {
+  			if (errorFlag) {
+   				var content = 'Error: The Geolocation service failed.';
+  			} else {
+    			var content = 'Error: Your browser doesn\'t support geolocation.';
+  			}
+  		}
     }
 };
 
-var viewModel = function() {
-	var self = this;
-
+var viewModel = {
 	//creates map on page
-	this.myMap = ko.observable({});
+	myMap: ko.observable({}),
+
+	//empty string for search bar
+	queryVenues: ko.observable(''),
+
+	//turns data model above into an observable array
+	events: ko.observableArray(model)
 };
 
-ko.applyBindings(new viewModel());
+//sorts the list view alphabetically
+viewModel.events.sort(function(left, right) { 
+	return left.title == right.title ? 0 : (left.title < right.title ? -1 : 1) 
+})
+
+viewModel.events = ko.dependentObservable(function() {
+	//makes the search bar case insensitive
+    var searchVenues = this.queryVenues().toLowerCase();
+
+    //looks through model for keywords and returns if found
+    return ko.utils.arrayFilter(viewModel.events(), function(array) {
+    	if (array.title.toLowerCase().indexOf(searchVenues) >= 0) {
+        	return array.title.toLowerCase().indexOf(searchVenues) >= 0;
+        } else {
+        	//resets events
+        	viewModel.events = ko.observableArray(model)
+        }
+    });
+}, viewModel);
+
+ko.applyBindings(viewModel);
