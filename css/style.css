@@ -14,7 +14,6 @@ body {
 
 a {
 	text-decoration: none;
-	background-color: 
 }
 
 h1 {
@@ -23,8 +22,13 @@ h1 {
 	padding-bottom: 15px;
 }
 
+ul {
+	text-align: right;
+}
+
 .navbar {
-	background:rgba(255,255,255, 0.77);
+	background: black; /* fallback for browser support*/
+	background: rgba(255,255,255, 0.77);
 }
 
 .header {
@@ -39,7 +43,6 @@ h1 {
 .venue {
 	border-style: solid;
 	border-width: 3px;
-	border-bottom: 0px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #f1f1f1;
@@ -73,8 +76,4 @@ h1 {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-#navbar ul {
-	text-align: right;
 }
