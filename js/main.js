@@ -1392,9 +1392,9 @@ ko.bindingHandlers.map = {
   		//handles failed geolocation
   		function handleNoGeolocation(errorFlag) {
   			if (errorFlag) {
-   				var content = 'Error: The Geolocation service failed.';
+   				console.log('Error: The Geolocation service failed.');
   			} else {
-    			var content = 'Error: Your browser doesn\'t support geolocation.';
+    			console.log('Error: Your browser doesn\'t support geolocation.');
   			}
   		}
     }

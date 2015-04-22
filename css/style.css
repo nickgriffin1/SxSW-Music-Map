@@ -71,7 +71,7 @@ ul {
 	font-size: 15px;
 }
 
-#mapDiv {
+.mapDiv {
 	height: 100%;
 	width: 100%;
 	margin: 0;
