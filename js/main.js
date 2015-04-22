@@ -1336,7 +1336,7 @@ ko.bindingHandlers.map = {
         //adds the markers to the map from the model array
         for (x = 0; x < viewModel.events().length; x++) {
         	//sets parameters for the markers
-			var marker = new google.maps.Marker({
+				marker = new google.maps.Marker({
 				position: new google.maps.LatLng(viewModel.events()[x].lat, viewModel.events()[x].lon),
 				map: mapObj.googleMap,
 				animation: google.maps.Animation.DROP,
@@ -1351,10 +1351,10 @@ ko.bindingHandlers.map = {
 					mapObj.googleMap.setCenter(marker.getPosition());
 			
 					infowindow.open(mapObj.googleMap, marker);
-					infowindow.setContent("<div><h6>" + viewModel.events()[x].title + "</h6><img src=https://maps.googleapis.com/maps/api/streetview?size=150x150&location=" + viewModel.events()[x].lat + "," + viewModel.events()[x].lon + "><p>" + viewModel.events()[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + viewModel.events()[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + viewModel.events()[x].id + "\">Lineup</a><div>")
+					infowindow.setContent("<div><h6>" + viewModel.events()[x].title + "</h6><img src=https://maps.googleapis.com/maps/api/streetview?size=150x150&location=" + viewModel.events()[x].lat + "," + viewModel.events()[x].lon + "><p>" + viewModel.events()[x].location + "</p><a>" + "<a type=\"button\" class=\"btn btn-primary\" href=\"http://" + viewModel.events()[x].link + "\">Website</a>" + " " + "<a type=\"button\" class=\"btn btn-primary\" href=\"#" + viewModel.events()[x].id + "\">Lineup</a><div>");
 
 					//bounces marker onclick
-					if (marker.getAnimation() != null) {
+					if (marker.getAnimation() !== null) {
 						marker.setAnimation(null);
 					} else {
 						marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -1364,7 +1364,7 @@ ko.bindingHandlers.map = {
 							marker.setAnimation(null);
 						}, 3000);
 					}
-				}
+				};
 			})(marker, x));	
   		}
 
@@ -1392,9 +1392,9 @@ ko.bindingHandlers.map = {
   		//handles failed geolocation
   		function handleNoGeolocation(errorFlag) {
   			if (errorFlag) {
-   				var content = 'Error: The Geolocation service failed.';
+   				console.log('Error: The Geolocation service failed.');
   			} else {
-    			var content = 'Error: Your browser doesn\'t support geolocation.';
+    			console.log('Error: Your browser doesn\'t support geolocation.');
   			}
   		}
     }
@@ -1413,8 +1413,8 @@ var viewModel = {
 
 //sorts the list view alphabetically
 viewModel.events.sort(function(left, right) { 
-	return left.title == right.title ? 0 : (left.title < right.title ? -1 : 1) 
-})
+	return left.title == right.title ? 0 : (left.title < right.title ? -1 : 1);
+});
 
 viewModel.events = ko.dependentObservable(function() {
 	//makes the search bar case insensitive
@@ -1426,7 +1426,7 @@ viewModel.events = ko.dependentObservable(function() {
         	return array.title.toLowerCase().indexOf(searchVenues) >= 0;
         } else {
         	//resets events
-        	viewModel.events = ko.observableArray(model)
+        	viewModel.events = ko.observableArray(model);
         }
     });
 }, viewModel);
