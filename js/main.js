@@ -1324,11 +1324,6 @@ ko.bindingHandlers.map = {
         //creates map using mapOptions to specify initial zoom and placement
         mapObj.googleMap = new google.maps.Map(element, mapOptions);
 
-        //used in for loop to add event listener to the markers, implemented outside of for loop as a closure
-    	function eventListenerMaker(marker, x) {
-        	
-  		}
-
   		var infowindow = new google.maps.InfoWindow();
 
   		var marker, i;
@@ -1416,6 +1411,7 @@ viewModel.events.sort(function(left, right) {
 	return left.title == right.title ? 0 : (left.title < right.title ? -1 : 1);
 });
 
+//search function
 viewModel.events = ko.dependentObservable(function() {
 	//makes the search bar case insensitive
     var searchVenues = this.queryVenues().toLowerCase();
