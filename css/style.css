@@ -22,10 +22,6 @@ h1 {
 	padding-bottom: 15px;
 }
 
-ul {
-	text-align: right;
-}
-
 .navbar {
 	background: black; /* fallback for browser support*/
 	background: rgba(255,255,255, 0.77);
