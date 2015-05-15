@@ -5,7 +5,6 @@ SXSW 2015 Music Map
 This is a single page application that displays the locations and lineups for various South by Southwest music events. This is designed mobile first, with desktop as an afterthought as most users will be using on mobile. 
 
 ###Operation Instructions
-* Vist [sxswmusicmap.com](sxswmusicmap.com)
 * Page will open to the map where users click on icons to view more information about venues. Pinch to zoom. When a infowindow is open users may see more information from the official website or view lineups by clicking the appropriate buttons.
 * Open menu by clicking the buttton in the bottom right corner and select "List View" to view events in a list or search for venues. 
 * Select About from the menu to see more about this site.
